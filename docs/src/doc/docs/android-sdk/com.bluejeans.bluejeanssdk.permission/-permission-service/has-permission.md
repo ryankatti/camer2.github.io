@@ -1,11 +1,12 @@
-//[Android SDK](../../../index.md)/[com.bluejeans.bluejeanssdk.permission](../index.md)/[PermissionService](index.md)/[hasPermission](has-permission.md)
+//[android-sdk](../../../index.md)/[com.bluejeans.bluejeanssdk.permission](../index.md)/[PermissionService](index.md)/[hasPermission](has-permission.md)
 
 
 
 # hasPermission  
 [androidJvm]  
 Content  
-fun [hasPermission](has-permission.md)(permission: [PermissionService.Permission](-permission/index.md)): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
+final [Boolean](https://developer.android.com/reference/kotlin/java/lang/Boolean.html)[hasPermission](has-permission.md)([PermissionService.Permission](-permission/index.md)permission)  
+  
 More info  
 
 

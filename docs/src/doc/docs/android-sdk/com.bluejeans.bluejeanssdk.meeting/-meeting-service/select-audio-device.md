@@ -1,15 +1,16 @@
-//[Android SDK](../../../index.md)/[com.bluejeans.bluejeanssdk.meeting](../index.md)/[MeetingService](index.md)/[selectAudioDevice](select-audio-device.md)
+//[android-sdk](../../../index.md)/[com.bluejeans.bluejeanssdk.meeting](../index.md)/[MeetingService](index.md)/[selectAudioDevice](select-audio-device.md)
 
 
 
 # selectAudioDevice  
 [androidJvm]  
 Content  
-fun [selectAudioDevice](select-audio-device.md)(selectedDevice: [AudioDevice](../-audio-device/index.md))  
+final [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)[selectAudioDevice](select-audio-device.md)([AudioDevice](../-audio-device/index.md)selectedDevice)  
+  
 More info  
 
 
-Select a device from the current available set of [audioDevices](audio-devices.md). Available only when the meeting is in connected state else it will be ignored.
+Select a device from the current available set of [audioDevices](index.md#-614886512%2FProperties%2F-435046686). Available only when the meeting is in connected state else it will be ignored.
 
 
 

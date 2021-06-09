@@ -1,11 +1,12 @@
-//[Android SDK](../../../index.md)/[com.bluejeans.bluejeanssdk.permission](../index.md)/[PermissionService](index.md)/[hasMinimumPermissions](has-minimum-permissions.md)
+//[android-sdk](../../../index.md)/[com.bluejeans.bluejeanssdk.permission](../index.md)/[PermissionService](index.md)/[hasMinimumPermissions](has-minimum-permissions.md)
 
 
 
 # hasMinimumPermissions  
 [androidJvm]  
 Content  
-fun [hasMinimumPermissions](has-minimum-permissions.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
+final [Boolean](https://developer.android.com/reference/kotlin/java/lang/Boolean.html)[hasMinimumPermissions](has-minimum-permissions.md)()  
+  
 More info  
 
 

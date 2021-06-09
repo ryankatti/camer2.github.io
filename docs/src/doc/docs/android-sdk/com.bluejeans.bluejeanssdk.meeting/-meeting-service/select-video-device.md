@@ -1,11 +1,12 @@
-//[Android SDK](../../../index.md)/[com.bluejeans.bluejeanssdk.meeting](../index.md)/[MeetingService](index.md)/[selectVideoDevice](select-video-device.md)
+//[android-sdk](../../../index.md)/[com.bluejeans.bluejeanssdk.meeting](../index.md)/[MeetingService](index.md)/[selectVideoDevice](select-video-device.md)
 
 
 
 # selectVideoDevice  
 [androidJvm]  
 Content  
-fun [selectVideoDevice](select-video-device.md)(selectedDevice: [VideoDevice](../../com.bluejeans.bluejeanssdk.selfvideo/-video-device/index.md))  
+final [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)[selectVideoDevice](select-video-device.md)([VideoDevice](../../com.bluejeans.bluejeanssdk.selfvideo/-video-device/index.md)selectedDevice)  
+  
 More info  
 
 

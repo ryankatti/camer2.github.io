@@ -1,11 +1,12 @@
-//[Android SDK](../../../index.md)/[com.bluejeans.bluejeanssdk.selfvideo](../index.md)/[SelfVideoFragment](index.md)/[onViewCreated](on-view-created.md)
+//[android-sdk](../../../index.md)/[com.bluejeans.bluejeanssdk.selfvideo](../index.md)/[SelfVideoFragment](index.md)/[onViewCreated](on-view-created.md)
 
 
 
 # onViewCreated  
 [androidJvm]  
 Content  
-open override fun [onViewCreated](on-view-created.md)(view: [View](https://developer.android.com/reference/kotlin/android/view/View.html), savedInstanceState: [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html)?)  
+[Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)[onViewCreated](on-view-created.md)([View](https://developer.android.com/reference/kotlin/android/view/View.html)view, [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html)savedInstanceState)  
+  
 
 
 

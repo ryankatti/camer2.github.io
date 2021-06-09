@@ -1,11 +1,12 @@
-//[Android SDK](../../../index.md)/[com.bluejeans.bluejeanssdk.meeting](../index.md)/[MeetingService](index.md)/[enableSelfVideoPreview](enable-self-video-preview.md)
+//[android-sdk](../../../index.md)/[com.bluejeans.bluejeanssdk.meeting](../index.md)/[MeetingService](index.md)/[enableSelfVideoPreview](enable-self-video-preview.md)
 
 
 
 # enableSelfVideoPreview  
 [androidJvm]  
 Content  
-fun [enableSelfVideoPreview](enable-self-video-preview.md)(enable: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html))  
+final [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)[enableSelfVideoPreview](enable-self-video-preview.md)([Boolean](https://developer.android.com/reference/kotlin/java/lang/Boolean.html)enable)  
+  
 More info  
 
 

@@ -1,11 +1,12 @@
-//[Android SDK](../../../index.md)/[com.bluejeans.bluejeanssdk.meeting](../index.md)/[MeetingService](index.md)/[setTorchMode](set-torch-mode.md)
+//[android-sdk](../../../index.md)/[com.bluejeans.bluejeanssdk.meeting](../index.md)/[MeetingService](index.md)/[setTorchMode](set-torch-mode.md)
 
 
 
 # setTorchMode  
 [androidJvm]  
 Content  
-fun [setTorchMode](set-torch-mode.md)(videoDevice: [VideoDevice](../../com.bluejeans.bluejeanssdk.selfvideo/-video-device/index.md), enabled: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
+final [Boolean](https://developer.android.com/reference/kotlin/java/lang/Boolean.html)[setTorchMode](set-torch-mode.md)([VideoDevice](../../com.bluejeans.bluejeanssdk.selfvideo/-video-device/index.md)videoDevice, [Boolean](https://developer.android.com/reference/kotlin/java/lang/Boolean.html)enabled)  
+  
 More info  
 
 

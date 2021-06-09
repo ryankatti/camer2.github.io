@@ -1,11 +1,12 @@
-//[Android SDK](../../../index.md)/[com.bluejeans.bluejeanssdk.meeting](../index.md)/[MeetingService](index.md)/[joinMeeting](join-meeting.md)
+//[android-sdk](../../../index.md)/[com.bluejeans.bluejeanssdk.meeting](../index.md)/[MeetingService](index.md)/[joinMeeting](join-meeting.md)
 
 
 
 # joinMeeting  
 [androidJvm]  
 Content  
-fun [joinMeeting](join-meeting.md)(joinParams: [MeetingService.JoinParams](-join-params/index.md)): Single<[MeetingService.JoinResult](-join-result/index.md)>  
+final Single<[MeetingService.JoinResult](-join-result/index.md)>[joinMeeting](join-meeting.md)([MeetingService.JoinParams](-join-params/index.md)joinParams)  
+  
 More info  
 
 

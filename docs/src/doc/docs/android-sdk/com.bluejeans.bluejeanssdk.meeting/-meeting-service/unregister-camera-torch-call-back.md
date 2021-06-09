@@ -1,11 +1,12 @@
-//[Android SDK](../../../index.md)/[com.bluejeans.bluejeanssdk.meeting](../index.md)/[MeetingService](index.md)/[unregisterCameraTorchCallBack](unregister-camera-torch-call-back.md)
+//[android-sdk](../../../index.md)/[com.bluejeans.bluejeanssdk.meeting](../index.md)/[MeetingService](index.md)/[unregisterCameraTorchCallBack](unregister-camera-torch-call-back.md)
 
 
 
 # unregisterCameraTorchCallBack  
 [androidJvm]  
 Content  
-fun [unregisterCameraTorchCallBack](unregister-camera-torch-call-back.md)(callback: [CameraManager.TorchCallback](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraManager.TorchCallback.html))  
+final [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)[unregisterCameraTorchCallBack](unregister-camera-torch-call-back.md)([CameraManager.TorchCallback](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraManager.TorchCallback.html)callback)  
+  
 More info  
 
 

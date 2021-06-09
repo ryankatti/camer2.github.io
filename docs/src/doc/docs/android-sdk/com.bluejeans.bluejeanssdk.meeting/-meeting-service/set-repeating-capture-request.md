@@ -1,4 +1,4 @@
-//[Android SDK](../../../index.md)/[com.bluejeans.bluejeanssdk.meeting](../index.md)/[MeetingService](index.md)/[setRepeatingCaptureRequest](set-repeating-capture-request.md)
+//[android-sdk](../../../index.md)/[com.bluejeans.bluejeanssdk.meeting](../index.md)/[MeetingService](index.md)/[setRepeatingCaptureRequest](set-repeating-capture-request.md)
 
 
 
@@ -7,7 +7,12 @@
 Content  
 @[JvmOverloads](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html)()  
   
-fun <[T](set-repeating-capture-request.md)> [setRepeatingCaptureRequest](set-repeating-capture-request.md)(key: [CaptureRequest.Key](https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest.Key.html)<[T](set-repeating-capture-request.md)>, value: [T](set-repeating-capture-request.md), callBack: [CameraCaptureSession.CaptureCallback](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession.CaptureCallback.html)? = null): [MeetingService.CaptureRequestResult](-capture-request-result/index.md)  
+final [MeetingService.CaptureRequestResult](-capture-request-result/index.md)[setRepeatingCaptureRequest](set-repeating-capture-request.md)<T extends [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)>([CaptureRequest.Key](https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest.Key.html)<[T](set-repeating-capture-request.md)>key, [T](set-repeating-capture-request.md)value, [CameraCaptureSession.CaptureCallback](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession.CaptureCallback.html)callBack)  
+  
+@[JvmOverloads](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html)()  
+  
+final [MeetingService.CaptureRequestResult](-capture-request-result/index.md)[setRepeatingCaptureRequest](set-repeating-capture-request.md)<T extends [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)>([CaptureRequest.Key](https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest.Key.html)<[T](set-repeating-capture-request.md)>key, [T](set-repeating-capture-request.md)value)  
+  
 More info  
 
 

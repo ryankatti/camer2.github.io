@@ -1,11 +1,12 @@
-//[Android SDK](../../../index.md)/[com.bluejeans.bluejeanssdk.meeting](../index.md)/[MeetingService](index.md)/[startContentShare](start-content-share.md)
+//[android-sdk](../../../index.md)/[com.bluejeans.bluejeanssdk.meeting](../index.md)/[MeetingService](index.md)/[startContentShare](start-content-share.md)
 
 
 
 # startContentShare  
 [androidJvm]  
 Content  
-fun [startContentShare](start-content-share.md)(contentShareType: ContentShareType)  
+final [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)[startContentShare](start-content-share.md)(ContentShareTypecontentShareType)  
+  
 More info  
 
 

@@ -1,15 +1,16 @@
-//[Android SDK](../../../index.md)/[com.bluejeans.bluejeanssdk.meeting](../index.md)/[MeetingService](index.md)/[setVideoMuted](set-video-muted.md)
+//[android-sdk](../../../index.md)/[com.bluejeans.bluejeanssdk.meeting](../index.md)/[MeetingService](index.md)/[setVideoMuted](set-video-muted.md)
 
 
 
 # setVideoMuted  
 [androidJvm]  
 Content  
-fun [setVideoMuted](set-video-muted.md)(muted: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html))  
+final [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)[setVideoMuted](set-video-muted.md)([Boolean](https://developer.android.com/reference/kotlin/java/lang/Boolean.html)muted)  
+  
 More info  
 
 
-Update the video mute state when in meeting. [videoMuted](video-muted.md) provides for current mute state.
+Update the video mute state when in meeting. [videoMuted](index.md#880064679%2FProperties%2F-435046686) provides for current mute state.
 
 
 

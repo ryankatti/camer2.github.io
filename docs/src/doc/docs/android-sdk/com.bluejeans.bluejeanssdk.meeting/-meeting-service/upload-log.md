@@ -1,11 +1,12 @@
-//[Android SDK](../../../index.md)/[com.bluejeans.bluejeanssdk.meeting](../index.md)/[MeetingService](index.md)/[uploadLog](upload-log.md)
+//[android-sdk](../../../index.md)/[com.bluejeans.bluejeanssdk.meeting](../index.md)/[MeetingService](index.md)/[uploadLog](upload-log.md)
 
 
 
 # uploadLog  
 [androidJvm]  
 Content  
-fun [uploadLog](upload-log.md)(comments: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), username: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)): Single<[MeetingService.LogUploadResult](-log-upload-result/index.md)>  
+final Single<[MeetingService.LogUploadResult](-log-upload-result/index.md)>[uploadLog](upload-log.md)([String](https://developer.android.com/reference/kotlin/java/lang/String.html)comments, [String](https://developer.android.com/reference/kotlin/java/lang/String.html)username)  
+  
 More info  
 
 

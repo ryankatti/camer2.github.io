@@ -1,11 +1,12 @@
-//[Android SDK](../../../index.md)/[com.bluejeans.bluejeanssdk.meeting](../index.md)/[MeetingService](index.md)/[registerCameraTorchModeCallBack](register-camera-torch-mode-call-back.md)
+//[android-sdk](../../../index.md)/[com.bluejeans.bluejeanssdk.meeting](../index.md)/[MeetingService](index.md)/[registerCameraTorchModeCallBack](register-camera-torch-mode-call-back.md)
 
 
 
 # registerCameraTorchModeCallBack  
 [androidJvm]  
 Content  
-fun [registerCameraTorchModeCallBack](register-camera-torch-mode-call-back.md)(callback: [CameraManager.TorchCallback](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraManager.TorchCallback.html), handler: [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html)?)  
+final [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)[registerCameraTorchModeCallBack](register-camera-torch-mode-call-back.md)([CameraManager.TorchCallback](https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraManager.TorchCallback.html)callback, [Handler](https://developer.android.com/reference/kotlin/android/os/Handler.html)handler)  
+  
 More info  
 
 

@@ -1,11 +1,12 @@
-//[Android SDK](../../../index.md)/[com.bluejeans.bluejeanssdk.permission](../index.md)/[PermissionService](index.md)/[register](register.md)
+//[android-sdk](../../../index.md)/[com.bluejeans.bluejeanssdk.permission](../index.md)/[PermissionService](index.md)/[register](register.md)
 
 
 
 # register  
 [androidJvm]  
 Content  
-fun [register](register.md)(componentActivity: [ComponentActivity](https://developer.android.com/reference/kotlin/androidx/activity/ComponentActivity.html))  
+final [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)[register](register.md)([ComponentActivity](https://developer.android.com/reference/kotlin/androidx/activity/ComponentActivity.html)componentActivity)  
+  
 More info  
 
 

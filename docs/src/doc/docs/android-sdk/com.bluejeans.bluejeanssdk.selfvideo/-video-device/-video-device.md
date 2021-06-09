@@ -1,11 +1,12 @@
-//[Android SDK](../../../index.md)/[com.bluejeans.bluejeanssdk.selfvideo](../index.md)/[VideoDevice](index.md)/[VideoDevice](-video-device.md)
+//[android-sdk](../../../index.md)/[com.bluejeans.bluejeanssdk.selfvideo](../index.md)/[VideoDevice](index.md)/[VideoDevice](-video-device.md)
 
 
 
 # VideoDevice  
 [androidJvm]  
 Content  
-fun [VideoDevice](-video-device.md)(id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), name: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), isFlashAvailable: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html))  
+[VideoDevice](index.md)[VideoDevice](-video-device.md)([String](https://developer.android.com/reference/kotlin/java/lang/String.html)id, [String](https://developer.android.com/reference/kotlin/java/lang/String.html)name, [Boolean](https://developer.android.com/reference/kotlin/java/lang/Boolean.html)isFlashAvailable)  
+  
 More info  
 
 

@@ -1,11 +1,12 @@
-//[Android SDK](../../../index.md)/[com.bluejeans.bluejeanssdk](../index.md)/[VideoConfiguration](index.md)/[VideoConfiguration](-video-configuration.md)
+//[android-sdk](../../../index.md)/[com.bluejeans.bluejeanssdk](../index.md)/[VideoConfiguration](index.md)/[VideoConfiguration](-video-configuration.md)
 
 
 
 # VideoConfiguration  
 [androidJvm]  
 Content  
-fun [VideoConfiguration](-video-configuration.md)(galleryLayoutConfiguration: [GalleryLayoutConfiguration](../-gallery-layout-configuration/index.md) = GalleryLayoutConfiguration.ThreeByThree)  
+[VideoConfiguration](index.md)[VideoConfiguration](-video-configuration.md)([GalleryLayoutConfiguration](../-gallery-layout-configuration/index.md)galleryLayoutConfiguration)  
+  
 
 
 

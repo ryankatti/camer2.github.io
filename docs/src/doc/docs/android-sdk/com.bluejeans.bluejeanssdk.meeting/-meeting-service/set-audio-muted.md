@@ -1,15 +1,16 @@
-//[Android SDK](../../../index.md)/[com.bluejeans.bluejeanssdk.meeting](../index.md)/[MeetingService](index.md)/[setAudioMuted](set-audio-muted.md)
+//[android-sdk](../../../index.md)/[com.bluejeans.bluejeanssdk.meeting](../index.md)/[MeetingService](index.md)/[setAudioMuted](set-audio-muted.md)
 
 
 
 # setAudioMuted  
 [androidJvm]  
 Content  
-fun [setAudioMuted](set-audio-muted.md)(muted: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html))  
+final [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)[setAudioMuted](set-audio-muted.md)([Boolean](https://developer.android.com/reference/kotlin/java/lang/Boolean.html)muted)  
+  
 More info  
 
 
-Update the audio mute state when in meeting. [audioMuted](audio-muted.md) provides for current mute state.
+Update the audio mute state when in meeting. [audioMuted](index.md#-1024774462%2FProperties%2F-435046686) provides for current mute state.
 
 
 

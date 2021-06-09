@@ -1,7 +1,23 @@
-//[Android SDK](../../../../index.md)/[com.bluejeans.bluejeanssdk.meeting](../../index.md)/[AudioDevice](../index.md)/[Speaker](index.md)
+//[android-sdk](../../../../index.md)/[com.bluejeans.bluejeanssdk.meeting](../../index.md)/[AudioDevice](../index.md)/[Speaker](index.md)
 
 
 
 # Speaker  
- [androidJvm] object [Speaker](index.md) : [AudioDevice](../index.md)   
+ [androidJvm] public class [Speaker](index.md) extends [AudioDevice](../index.md)   
+
+
+## Properties  
+  
+|  Name |  Summary | 
+|---|---|
+| <a name="com.bluejeans.bluejeanssdk.meeting/AudioDevice.Speaker/INSTANCE/#/PointingToDeclaration/"></a>[INSTANCE](index.md#77421159%2FProperties%2F-435046686)| <a name="com.bluejeans.bluejeanssdk.meeting/AudioDevice.Speaker/INSTANCE/#/PointingToDeclaration/"></a> [androidJvm] public final static [AudioDevice.Speaker](index.md)[INSTANCE](index.md#77421159%2FProperties%2F-435046686)  <br>   <br>|
+
+
+## Inherited functions  
+  
+|  Name |  Summary | 
+|---|---|
+| <a name="kotlin/AudioDevice.Speaker/equals/#kotlin.Any?/PointingToDeclaration/"></a>[equals](index.md#-932781340%2FFunctions%2F-435046686)| <a name="kotlin/AudioDevice.Speaker/equals/#kotlin.Any?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>[Boolean](https://developer.android.com/reference/kotlin/java/lang/Boolean.html)[equals](index.md#-932781340%2FFunctions%2F-435046686)([Object](https://developer.android.com/reference/kotlin/java/lang/Object.html)other)  <br>  <br><br><br>|
+| <a name="kotlin/AudioDevice.Speaker/hashCode/#/PointingToDeclaration/"></a>[hashCode](index.md#-2106870398%2FFunctions%2F-435046686)| <a name="kotlin/AudioDevice.Speaker/hashCode/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>[Integer](https://developer.android.com/reference/kotlin/java/lang/Integer.html)[hashCode](index.md#-2106870398%2FFunctions%2F-435046686)()  <br>  <br><br><br>|
+| <a name="kotlin/AudioDevice.Speaker/toString/#/PointingToDeclaration/"></a>[toString](index.md#2009930833%2FFunctions%2F-435046686)| <a name="kotlin/AudioDevice.Speaker/toString/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>[String](https://developer.android.com/reference/kotlin/java/lang/String.html)[toString](index.md#2009930833%2FFunctions%2F-435046686)()  <br>  <br><br><br>|
 
