@@ -15,7 +15,6 @@ edit_uri: edit/main/docs/src/doc/docs/
 # Copyright (shown at the footer)
 copyright: 'Copyright (c) 2020 Blue Jeans Network, Inc. All rights reserved.'
 
-
 # Material theme
 theme:
   name: 'material'
@@ -24,13 +23,12 @@ theme:
     - type: 'github'
       link: 'https://github.com/Kotlin/dokka'
       
-      
 # Extensions
 markdown_extensions:
   - admonition
   - codehilite:
       guess_lang: false
-  - footnotes
+       - footnotes
   - meta
   - def_list
   - toc:
@@ -43,8 +41,6 @@ markdown_extensions:
   - pymdownx.smartsymbols
   - pymdownx.superfences
   
-  
-  nav:
+nav:
   - Home: index.md
   - User guide:
- 
