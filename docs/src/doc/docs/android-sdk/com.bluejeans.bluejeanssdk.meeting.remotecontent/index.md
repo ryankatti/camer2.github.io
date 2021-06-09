@@ -1,4 +1,4 @@
-//[Android SDK](../../index.md)/[com.bluejeans.bluejeanssdk.meeting.remotecontent](index.md)
+//[Android SDK](../index.md)/[com.bluejeans.bluejeanssdk.meeting.remotecontent](index.md)
 
 
 

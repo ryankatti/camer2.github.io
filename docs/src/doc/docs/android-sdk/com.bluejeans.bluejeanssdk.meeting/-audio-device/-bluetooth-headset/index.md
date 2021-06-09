@@ -1,4 +1,4 @@
-//[Android SDK](../../../../index.md)/[com.bluejeans.bluejeanssdk.meeting](../../index.md)/[AudioDevice](../index.md)/[BluetoothHeadset](index.md)
+//[Android SDK](../../index.md)/[com.bluejeans.bluejeanssdk.meeting](../../index.md)/[AudioDevice](../index.md)/[BluetoothHeadset](index.md)
 
 
 

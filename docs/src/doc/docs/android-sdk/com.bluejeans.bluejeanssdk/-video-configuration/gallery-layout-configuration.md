@@ -1,4 +1,4 @@
-//[Android SDK](../../../index.md)/[com.bluejeans.bluejeanssdk](../index.md)/[VideoConfiguration](index.md)/[galleryLayoutConfiguration](gallery-layout-configuration.md)
+//[Android SDK](../../index.md)/[com.bluejeans.bluejeanssdk](../index.md)/[VideoConfiguration](index.md)/[galleryLayoutConfiguration](gallery-layout-configuration.md)
 
 
 

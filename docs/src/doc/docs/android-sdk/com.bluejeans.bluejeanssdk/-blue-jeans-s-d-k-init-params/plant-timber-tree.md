@@ -1,4 +1,4 @@
-//[Android SDK](../../../index.md)/[com.bluejeans.bluejeanssdk](../index.md)/[BlueJeansSDKInitParams](index.md)/[plantTimberTree](plant-timber-tree.md)
+//[Android SDK](../../index.md)/[com.bluejeans.bluejeanssdk](../index.md)/[BlueJeansSDKInitParams](index.md)/[plantTimberTree](plant-timber-tree.md)
 
 
 
