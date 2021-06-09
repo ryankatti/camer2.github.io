@@ -42,5 +42,5 @@ markdown_extensions:
   - pymdownx.superfences
   
 nav:
-  - Home: index.md
+  - Home: android-sdk/index.md
   - User guide:
