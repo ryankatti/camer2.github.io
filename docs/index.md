@@ -4,6 +4,8 @@
 ## Getting Started
 Version: 1.0.0-alpha.1
 
+* [Android SDK Packages](src/doc/docs/index.md)
+
 ### Features:
 - Audio and Video Permission handling
 - Join, End Meeting
