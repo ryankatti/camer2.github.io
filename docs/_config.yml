@@ -1,4 +1,50 @@
 site_name: BlueJeans Android SDK
 
+# Meta tags (placed in header)
+site_description: Bluejeans android sdk is interface for the client whoever wants to use bluejeans apis to set up meetings.
+site_author: BlueJeans
+site_url: https://github.com/ryankatti/camer2.github.io
 
 
+# Repository (add link to repository on each page)
+repo_name: camera2.github.io
+repo_url:  https://github.com/ryankatti/camer2.github.io
+edit_uri: edit/main/docs/src/doc/docs/
+
+
+# Copyright (shown at the footer)
+copyright: 'Copyright (c) 2020 Blue Jeans Network, Inc. All rights reserved.'
+
+
+# Material theme
+theme:
+  name: 'material'
+  #favicon: favicon.svg
+  social:
+    - type: 'github'
+      link: 'https://github.com/Kotlin/dokka'
+      
+      
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - footnotes
+  - meta
+  - def_list
+  - toc:
+      permalink: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  
+  
+  nav:
+  - Home: index.md
+  - User guide:
+ 
