@@ -10,5 +10,3 @@ BlueJeans SDK  makes it easy to use Bluejeans's Meeting API in your Android proj
 * [Integration](Integration.md)
 * [Sample App](Sampleapp.md)
 * [Documentation](src/doc/docs/index.md)
-
-
