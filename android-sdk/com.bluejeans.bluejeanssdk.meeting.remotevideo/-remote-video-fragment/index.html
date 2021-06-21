@@ -1,0 +1,1335 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Bluejeans android sdk is interface for the client whoever wants to use bluejeans apis to set up meetings.">
+      
+      
+      
+        <meta name="author" content="BlueJeans">
+      
+      
+        <link rel="canonical" href="https://github.com/ryankatti/camer2.github.io/android-sdk/com.bluejeans.bluejeanssdk.meeting.remotevideo/-remote-video-fragment/">
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.8">
+    
+    
+      
+        <title>Index - BlueJeans Android SDK</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ca7ac06f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.f1a3b89f.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../../dokka_colors.css">
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#remotevideofragment" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="BlueJeans Android SDK" class="md-header__button md-logo" aria-label="BlueJeans Android SDK" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            BlueJeans Android SDK
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Index
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/ryankatti/camer2.github.io/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    camera2.github.io
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="BlueJeans Android SDK" class="md-nav__button md-logo" aria-label="BlueJeans Android SDK" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    BlueJeans Android SDK
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/ryankatti/camer2.github.io/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    camera2.github.io
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
+        User guide
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="User guide" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          User guide
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../integration/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../setup/" class="md-nav__link">
+        Set up
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../sampleapp/" class="md-nav__link">
+        Sample Application
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../sampleapp/" class="md-nav__link">
+        SDK Documentation
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#constructors" class="md-nav__link">
+    Constructors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inherited-properties" class="md-nav__link">
+    Inherited properties
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    Functions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inherited-functions" class="md-nav__link">
+    Inherited functions
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/ryankatti/camer2.github.io/edit/main/docs/src/doc/docs/android-sdk/com.bluejeans.bluejeanssdk.meeting.remotevideo/-remote-video-fragment/index.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <p>//<a href="../../..">android-sdk</a>/<a href="../">com.bluejeans.bluejeanssdk.meeting.remotevideo</a>/<a href="./">RemoteVideoFragment</a></p>
+<h1 id="remotevideofragment">RemoteVideoFragment<a class="headerlink" href="#remotevideofragment" title="Permanent link">&para;</a></h1>
+<p>[androidJvm] public final class <a href="./">RemoteVideoFragment</a> extends BaseFragment&lt;<ERROR CLASS>&gt;</p>
+<p>Ui core wrapper</p>
+<h2 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/RemoteVideoFragment/#/PointingToDeclaration/"></a><a href="-remote-video-fragment/">RemoteVideoFragment</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/RemoteVideoFragment/#/PointingToDeclaration/"></a> [androidJvm] <a href="./">RemoteVideoFragment</a><a href="-remote-video-fragment/">RemoteVideoFragment</a>()  <br>   <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="inherited-properties">Inherited properties<a class="headerlink" href="#inherited-properties" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mAdded/#/PointingToDeclaration/"></a><a href="./#-1902886664%2FProperties%2F-435046686">mAdded</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mAdded/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#-1902886664%2FProperties%2F-435046686">mAdded</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mAnimationInfo/#/PointingToDeclaration/"></a><a href="./#-513088282%2FProperties%2F-435046686">mAnimationInfo</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mAnimationInfo/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.AnimationInfo.html">Fragment.AnimationInfo</a><a href="./#-513088282%2FProperties%2F-435046686">mAnimationInfo</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mArguments/#/PointingToDeclaration/"></a><a href="./#-622133278%2FProperties%2F-435046686">mArguments</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mArguments/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a><a href="./#-622133278%2FProperties%2F-435046686">mArguments</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mBackStackNesting/#/PointingToDeclaration/"></a><a href="./#1653827929%2FProperties%2F-435046686">mBackStackNesting</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mBackStackNesting/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a><a href="./#1653827929%2FProperties%2F-435046686">mBackStackNesting</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mChildFragmentManager/#/PointingToDeclaration/"></a><a href="./#-1482893119%2FProperties%2F-435046686">mChildFragmentManager</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mChildFragmentManager/#/PointingToDeclaration/"></a> [androidJvm] @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br>private final <a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/FragmentManager.html">FragmentManager</a><a href="./#-1482893119%2FProperties%2F-435046686">mChildFragmentManager</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mContainer/#/PointingToDeclaration/"></a><a href="./#-1080392937%2FProperties%2F-435046686">mContainer</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mContainer/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/android/view/ViewGroup.html">ViewGroup</a><a href="./#-1080392937%2FProperties%2F-435046686">mContainer</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mContainerId/#/PointingToDeclaration/"></a><a href="./#1801606076%2FProperties%2F-435046686">mContainerId</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mContainerId/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a><a href="./#1801606076%2FProperties%2F-435046686">mContainerId</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mDeferStart/#/PointingToDeclaration/"></a><a href="./#908958802%2FProperties%2F-435046686">mDeferStart</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mDeferStart/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#908958802%2FProperties%2F-435046686">mDeferStart</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mDetached/#/PointingToDeclaration/"></a><a href="./#-1038012304%2FProperties%2F-435046686">mDetached</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mDetached/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#-1038012304%2FProperties%2F-435046686">mDetached</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mFragmentId/#/PointingToDeclaration/"></a><a href="./#-112108233%2FProperties%2F-435046686">mFragmentId</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mFragmentId/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a><a href="./#-112108233%2FProperties%2F-435046686">mFragmentId</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mFragmentManager/#/PointingToDeclaration/"></a><a href="./#907237275%2FProperties%2F-435046686">mFragmentManager</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mFragmentManager/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/FragmentManager.html">FragmentManager</a><a href="./#907237275%2FProperties%2F-435046686">mFragmentManager</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mFromLayout/#/PointingToDeclaration/"></a><a href="./#1634231662%2FProperties%2F-435046686">mFromLayout</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mFromLayout/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#1634231662%2FProperties%2F-435046686">mFromLayout</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mHasMenu/#/PointingToDeclaration/"></a><a href="./#1628642879%2FProperties%2F-435046686">mHasMenu</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mHasMenu/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#1628642879%2FProperties%2F-435046686">mHasMenu</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mHidden/#/PointingToDeclaration/"></a><a href="./#1984774776%2FProperties%2F-435046686">mHidden</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mHidden/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#1984774776%2FProperties%2F-435046686">mHidden</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mHiddenChanged/#/PointingToDeclaration/"></a><a href="./#-1981980530%2FProperties%2F-435046686">mHiddenChanged</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mHiddenChanged/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#-1981980530%2FProperties%2F-435046686">mHiddenChanged</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mHost/#/PointingToDeclaration/"></a><a href="./#-1584576134%2FProperties%2F-435046686">mHost</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mHost/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/FragmentHostCallback.html">FragmentHostCallback</a>&lt;?&gt;<a href="./#-1584576134%2FProperties%2F-435046686">mHost</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mInLayout/#/PointingToDeclaration/"></a><a href="./#-1847204397%2FProperties%2F-435046686">mInLayout</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mInLayout/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#-1847204397%2FProperties%2F-435046686">mInLayout</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mIsCreated/#/PointingToDeclaration/"></a><a href="./#1594026970%2FProperties%2F-435046686">mIsCreated</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mIsCreated/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#1594026970%2FProperties%2F-435046686">mIsCreated</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mIsNewlyAdded/#/PointingToDeclaration/"></a><a href="./#-1387231963%2FProperties%2F-435046686">mIsNewlyAdded</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mIsNewlyAdded/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#-1387231963%2FProperties%2F-435046686">mIsNewlyAdded</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mLayoutInflater/#/PointingToDeclaration/"></a><a href="./#-2019986195%2FProperties%2F-435046686">mLayoutInflater</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mLayoutInflater/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/android/view/LayoutInflater.html">LayoutInflater</a><a href="./#-2019986195%2FProperties%2F-435046686">mLayoutInflater</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mLifecycleRegistry/#/PointingToDeclaration/"></a><a href="./#-1829712495%2FProperties%2F-435046686">mLifecycleRegistry</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mLifecycleRegistry/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/LifecycleRegistry.html">LifecycleRegistry</a><a href="./#-1829712495%2FProperties%2F-435046686">mLifecycleRegistry</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mMaxState/#/PointingToDeclaration/"></a><a href="./#-564669771%2FProperties%2F-435046686">mMaxState</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mMaxState/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/Lifecycle.State.html">Lifecycle.State</a><a href="./#-564669771%2FProperties%2F-435046686">mMaxState</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mMenuVisible/#/PointingToDeclaration/"></a><a href="./#145038085%2FProperties%2F-435046686">mMenuVisible</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mMenuVisible/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#145038085%2FProperties%2F-435046686">mMenuVisible</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mParentFragment/#/PointingToDeclaration/"></a><a href="./#-570743800%2FProperties%2F-435046686">mParentFragment</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mParentFragment/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.html">Fragment</a><a href="./#-570743800%2FProperties%2F-435046686">mParentFragment</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mPerformedCreateView/#/PointingToDeclaration/"></a><a href="./#1003726903%2FProperties%2F-435046686">mPerformedCreateView</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mPerformedCreateView/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#1003726903%2FProperties%2F-435046686">mPerformedCreateView</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mPostponedAlpha/#/PointingToDeclaration/"></a><a href="./#1223515762%2FProperties%2F-435046686">mPostponedAlpha</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mPostponedAlpha/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/Float.html">Float</a><a href="./#1223515762%2FProperties%2F-435046686">mPostponedAlpha</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mPostponedDurationRunnable/#/PointingToDeclaration/"></a><a href="./#1605363673%2FProperties%2F-435046686">mPostponedDurationRunnable</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mPostponedDurationRunnable/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/Runnable.html">Runnable</a><a href="./#1605363673%2FProperties%2F-435046686">mPostponedDurationRunnable</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mRemoving/#/PointingToDeclaration/"></a><a href="./#640020097%2FProperties%2F-435046686">mRemoving</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mRemoving/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#640020097%2FProperties%2F-435046686">mRemoving</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mRestored/#/PointingToDeclaration/"></a><a href="./#-205624116%2FProperties%2F-435046686">mRestored</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mRestored/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#-205624116%2FProperties%2F-435046686">mRestored</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mRetainInstance/#/PointingToDeclaration/"></a><a href="./#-1444157336%2FProperties%2F-435046686">mRetainInstance</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mRetainInstance/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#-1444157336%2FProperties%2F-435046686">mRetainInstance</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mRetainInstanceChangedWhileDetached/#/PointingToDeclaration/"></a><a href="./#1416442937%2FProperties%2F-435046686">mRetainInstanceChangedWhileDetached</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mRetainInstanceChangedWhileDetached/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#1416442937%2FProperties%2F-435046686">mRetainInstanceChangedWhileDetached</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mSavedFragmentState/#/PointingToDeclaration/"></a><a href="./#490704328%2FProperties%2F-435046686">mSavedFragmentState</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mSavedFragmentState/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a><a href="./#490704328%2FProperties%2F-435046686">mSavedFragmentState</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mSavedStateRegistryController/#/PointingToDeclaration/"></a><a href="./#180443359%2FProperties%2F-435046686">mSavedStateRegistryController</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mSavedStateRegistryController/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/androidx/savedstate/SavedStateRegistryController.html">SavedStateRegistryController</a><a href="./#180443359%2FProperties%2F-435046686">mSavedStateRegistryController</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mSavedUserVisibleHint/#/PointingToDeclaration/"></a><a href="./#-1906941381%2FProperties%2F-435046686">mSavedUserVisibleHint</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mSavedUserVisibleHint/#/PointingToDeclaration/"></a> [androidJvm] @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()  <br>  <br>private final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#-1906941381%2FProperties%2F-435046686">mSavedUserVisibleHint</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mSavedViewRegistryState/#/PointingToDeclaration/"></a><a href="./#1052941306%2FProperties%2F-435046686">mSavedViewRegistryState</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mSavedViewRegistryState/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a><a href="./#1052941306%2FProperties%2F-435046686">mSavedViewRegistryState</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mSavedViewState/#/PointingToDeclaration/"></a><a href="./#-65943203%2FProperties%2F-435046686">mSavedViewState</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mSavedViewState/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/android/util/SparseArray.html">SparseArray</a>&lt;<a href="https://developer.android.com/reference/kotlin/android/os/Parcelable.html">Parcelable</a>&gt;<a href="./#-65943203%2FProperties%2F-435046686">mSavedViewState</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mState/#/PointingToDeclaration/"></a><a href="./#-1159933305%2FProperties%2F-435046686">mState</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mState/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a><a href="./#-1159933305%2FProperties%2F-435046686">mState</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mTag/#/PointingToDeclaration/"></a><a href="./#-1754106274%2FProperties%2F-435046686">mTag</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mTag/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><a href="./#-1754106274%2FProperties%2F-435046686">mTag</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mTarget/#/PointingToDeclaration/"></a><a href="./#-1950691215%2FProperties%2F-435046686">mTarget</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mTarget/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.html">Fragment</a><a href="./#-1950691215%2FProperties%2F-435046686">mTarget</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mTargetRequestCode/#/PointingToDeclaration/"></a><a href="./#1117238541%2FProperties%2F-435046686">mTargetRequestCode</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mTargetRequestCode/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a><a href="./#1117238541%2FProperties%2F-435046686">mTargetRequestCode</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mTargetWho/#/PointingToDeclaration/"></a><a href="./#-895867733%2FProperties%2F-435046686">mTargetWho</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mTargetWho/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><a href="./#-895867733%2FProperties%2F-435046686">mTargetWho</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mUserVisibleHint/#/PointingToDeclaration/"></a><a href="./#1453944490%2FProperties%2F-435046686">mUserVisibleHint</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mUserVisibleHint/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#1453944490%2FProperties%2F-435046686">mUserVisibleHint</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mView/#/PointingToDeclaration/"></a><a href="./#572697373%2FProperties%2F-435046686">mView</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mView/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><a href="./#572697373%2FProperties%2F-435046686">mView</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mViewLifecycleOwner/#/PointingToDeclaration/"></a><a href="./#-1719474764%2FProperties%2F-435046686">mViewLifecycleOwner</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mViewLifecycleOwner/#/PointingToDeclaration/"></a> [androidJvm] @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()  <br>  <br>private final <a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/FragmentViewLifecycleOwner.html">FragmentViewLifecycleOwner</a><a href="./#-1719474764%2FProperties%2F-435046686">mViewLifecycleOwner</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mViewLifecycleOwnerLiveData/#/PointingToDeclaration/"></a><a href="./#813406366%2FProperties%2F-435046686">mViewLifecycleOwnerLiveData</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mViewLifecycleOwnerLiveData/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/MutableLiveData.html">MutableLiveData</a>&lt;<a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/LifecycleOwner.html">LifecycleOwner</a>&gt;<a href="./#813406366%2FProperties%2F-435046686">mViewLifecycleOwnerLiveData</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mWho/#/PointingToDeclaration/"></a><a href="./#166173370%2FProperties%2F-435046686">mWho</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/mWho/#/PointingToDeclaration/"></a> [androidJvm] @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br>private final <a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><a href="./#166173370%2FProperties%2F-435046686">mWho</a>  <br>   <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/initialiseBinding/#android.view.LayoutInflater#android.view.ViewGroup?#android.os.Bundle?/PointingToDeclaration/"></a><a href="initialise-binding/">initialiseBinding</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/initialiseBinding/#android.view.LayoutInflater#android.view.ViewGroup?#android.os.Bundle?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="initialise-binding/">initialiseBinding</a>(<a href="https://developer.android.com/reference/kotlin/android/view/LayoutInflater.html">LayoutInflater</a>inflater, <a href="https://developer.android.com/reference/kotlin/android/view/ViewGroup.html">ViewGroup</a>container, <a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a>savedInstanceState)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/onViewCreated/#android.view.View#android.os.Bundle?/PointingToDeclaration/"></a><a href="on-view-created/">onViewCreated</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotevideo/RemoteVideoFragment/onViewCreated/#android.view.View#android.os.Bundle?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="on-view-created/">onViewCreated</a>(<a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a>view, <a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a>savedInstanceState)  <br>  <br><br><br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="inherited-functions">Inherited functions<a class="headerlink" href="#inherited-functions" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/callStartTransitionListener/#kotlin.Boolean/PointingToDeclaration/"></a><a href="./#1759612518%2FFunctions%2F-435046686">callStartTransitionListener</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/callStartTransitionListener/#kotlin.Boolean/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#1759612518%2FFunctions%2F-435046686">callStartTransitionListener</a>(<a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/createFragmentContainer/#/PointingToDeclaration/"></a><a href="./#-1910995751%2FFunctions%2F-435046686">createFragmentContainer</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/createFragmentContainer/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br><a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/FragmentContainer.html">FragmentContainer</a><a href="./#-1910995751%2FFunctions%2F-435046686">createFragmentContainer</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/dump/#kotlin.String#java.io.FileDescriptor?#java.io.PrintWriter#kotlin.Array[kotlin.String]?/PointingToDeclaration/"></a><a href="./#-449333992%2FFunctions%2F-435046686">dump</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/dump/#kotlin.String#java.io.FileDescriptor?#java.io.PrintWriter#kotlin.Array[kotlin.String]?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-449333992%2FFunctions%2F-435046686">dump</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a>p0, @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html">FileDescriptor</a>p1, @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/java/io/PrintWriter.html">PrintWriter</a>p2, @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a>&lt;<a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a>&gt;p3)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/equals/#kotlin.Any?/PointingToDeclaration/"></a><a href="./#-261868779%2FFunctions%2F-435046686">equals</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/equals/#kotlin.Any?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#-261868779%2FFunctions%2F-435046686">equals</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a>other)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/findFragmentByWho/#kotlin.String/PointingToDeclaration/"></a><a href="./#1134734612%2FFunctions%2F-435046686">findFragmentByWho</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/findFragmentByWho/#kotlin.String/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()  <br>  <br><a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.html">Fragment</a><a href="./#1134734612%2FFunctions%2F-435046686">findFragmentByWho</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/generateActivityResultKey/#/PointingToDeclaration/"></a><a href="./#1154243952%2FFunctions%2F-435046686">generateActivityResultKey</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/generateActivityResultKey/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><a href="./#1154243952%2FFunctions%2F-435046686">generateActivityResultKey</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getActivity/#/PointingToDeclaration/"></a><a href="./#456409673%2FFunctions%2F-435046686">getActivity</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getActivity/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()  <br>  <br>final <a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/FragmentActivity.html">FragmentActivity</a><a href="./#456409673%2FFunctions%2F-435046686">getActivity</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getAllowEnterTransitionOverlap/#/PointingToDeclaration/"></a><a href="./#-573472097%2FFunctions%2F-435046686">getAllowEnterTransitionOverlap</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getAllowEnterTransitionOverlap/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#-573472097%2FFunctions%2F-435046686">getAllowEnterTransitionOverlap</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getAllowReturnTransitionOverlap/#/PointingToDeclaration/"></a><a href="./#-1452089153%2FFunctions%2F-435046686">getAllowReturnTransitionOverlap</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getAllowReturnTransitionOverlap/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#-1452089153%2FFunctions%2F-435046686">getAllowReturnTransitionOverlap</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getAnimatingAway/#/PointingToDeclaration/"></a><a href="./#325626870%2FFunctions%2F-435046686">getAnimatingAway</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getAnimatingAway/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><a href="./#325626870%2FFunctions%2F-435046686">getAnimatingAway</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getAnimator/#/PointingToDeclaration/"></a><a href="./#-606073487%2FFunctions%2F-435046686">getAnimator</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getAnimator/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://developer.android.com/reference/kotlin/android/animation/Animator.html">Animator</a><a href="./#-606073487%2FFunctions%2F-435046686">getAnimator</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getArguments/#/PointingToDeclaration/"></a><a href="./#-1443087412%2FFunctions%2F-435046686">getArguments</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getArguments/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()  <br>  <br>final <a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a><a href="./#-1443087412%2FFunctions%2F-435046686">getArguments</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getChildFragmentManager/#/PointingToDeclaration/"></a><a href="./#1835656855%2FFunctions%2F-435046686">getChildFragmentManager</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getChildFragmentManager/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br>final <a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/FragmentManager.html">FragmentManager</a><a href="./#1835656855%2FFunctions%2F-435046686">getChildFragmentManager</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getContext/#/PointingToDeclaration/"></a><a href="./#1797114579%2FFunctions%2F-435046686">getContext</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getContext/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()  <br>  <br><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><a href="./#1797114579%2FFunctions%2F-435046686">getContext</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getDefaultViewModelProviderFactory/#/PointingToDeclaration/"></a><a href="./#-541443508%2FFunctions%2F-435046686">getDefaultViewModelProviderFactory</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getDefaultViewModelProviderFactory/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br><a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/ViewModelProvider.Factory.html">ViewModelProvider.Factory</a><a href="./#-541443508%2FFunctions%2F-435046686">getDefaultViewModelProviderFactory</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getEnterTransition/#/PointingToDeclaration/"></a><a href="./#-284264715%2FFunctions%2F-435046686">getEnterTransition</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getEnterTransition/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()  <br>  <br><a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a><a href="./#-284264715%2FFunctions%2F-435046686">getEnterTransition</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getEnterTransitionCallback/#/PointingToDeclaration/"></a><a href="./#-733510096%2FFunctions%2F-435046686">getEnterTransitionCallback</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getEnterTransitionCallback/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://developer.android.com/reference/kotlin/androidx/core/app/SharedElementCallback.html">SharedElementCallback</a><a href="./#-733510096%2FFunctions%2F-435046686">getEnterTransitionCallback</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getExitTransition/#/PointingToDeclaration/"></a><a href="./#236246149%2FFunctions%2F-435046686">getExitTransition</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getExitTransition/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()  <br>  <br><a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a><a href="./#236246149%2FFunctions%2F-435046686">getExitTransition</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getExitTransitionCallback/#/PointingToDeclaration/"></a><a href="./#-803253312%2FFunctions%2F-435046686">getExitTransitionCallback</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getExitTransitionCallback/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://developer.android.com/reference/kotlin/androidx/core/app/SharedElementCallback.html">SharedElementCallback</a><a href="./#-803253312%2FFunctions%2F-435046686">getExitTransitionCallback</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getFocusedView/#/PointingToDeclaration/"></a><a href="./#-1287243802%2FFunctions%2F-435046686">getFocusedView</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getFocusedView/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><a href="./#-1287243802%2FFunctions%2F-435046686">getFocusedView</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getFragmentManager/#/PointingToDeclaration/"></a><a href="./#511605765%2FFunctions%2F-435046686">getFragmentManager</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getFragmentManager/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()  <br>@<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html">Deprecated</a>(message = Deprecated in Java)  <br>  <br>~~final~~ <a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/FragmentManager.html">FragmentManager</a><a href="./#511605765%2FFunctions%2F-435046686">~~getFragmentManager~~</a>~~(~~~~)~~  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getHost/#/PointingToDeclaration/"></a><a href="./#1298973520%2FFunctions%2F-435046686">getHost</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getHost/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()  <br>  <br>final <a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a><a href="./#1298973520%2FFunctions%2F-435046686">getHost</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getId/#/PointingToDeclaration/"></a><a href="./#64534013%2FFunctions%2F-435046686">getId</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getId/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>final <a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a><a href="./#64534013%2FFunctions%2F-435046686">getId</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getLayoutInflater/#/PointingToDeclaration/"></a><a href="./#-1201464509%2FFunctions%2F-435046686">getLayoutInflater</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getLayoutInflater/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br>final <a href="https://developer.android.com/reference/kotlin/android/view/LayoutInflater.html">LayoutInflater</a><a href="./#-1201464509%2FFunctions%2F-435046686">getLayoutInflater</a>()  <br>  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>@<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html">Deprecated</a>(message = Deprecated in Java)  <br>  <br><a href="https://developer.android.com/reference/kotlin/android/view/LayoutInflater.html">LayoutInflater</a><a href="./#-729760815%2FFunctions%2F-435046686">~~getLayoutInflater~~</a>~~(~~@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a>~~p0~~~~)~~  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getLifecycle/#/PointingToDeclaration/"></a><a href="./#-48231368%2FFunctions%2F-435046686">getLifecycle</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getLifecycle/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br><a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/Lifecycle.html">Lifecycle</a><a href="./#-48231368%2FFunctions%2F-435046686">getLifecycle</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getLoaderManager/#/PointingToDeclaration/"></a><a href="./#330494728%2FFunctions%2F-435046686">getLoaderManager</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getLoaderManager/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>@<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html">Deprecated</a>(message = Deprecated in Java)  <br>  <br><a href="https://developer.android.com/reference/kotlin/androidx/loader/app/LoaderManager.html">LoaderManager</a><a href="./#330494728%2FFunctions%2F-435046686">~~getLoaderManager~~</a>~~(~~~~)~~  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getNextAnim/#/PointingToDeclaration/"></a><a href="./#-2072574124%2FFunctions%2F-435046686">getNextAnim</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getNextAnim/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a><a href="./#-2072574124%2FFunctions%2F-435046686">getNextAnim</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getNextTransition/#/PointingToDeclaration/"></a><a href="./#215042704%2FFunctions%2F-435046686">getNextTransition</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getNextTransition/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a><a href="./#215042704%2FFunctions%2F-435046686">getNextTransition</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getParentFragment/#/PointingToDeclaration/"></a><a href="./#247777886%2FFunctions%2F-435046686">getParentFragment</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getParentFragment/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()  <br>  <br>final <a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.html">Fragment</a><a href="./#247777886%2FFunctions%2F-435046686">getParentFragment</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getParentFragmentManager/#/PointingToDeclaration/"></a><a href="./#-1449396465%2FFunctions%2F-435046686">getParentFragmentManager</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getParentFragmentManager/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br>final <a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/FragmentManager.html">FragmentManager</a><a href="./#-1449396465%2FFunctions%2F-435046686">getParentFragmentManager</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getPostOnViewCreatedAlpha/#/PointingToDeclaration/"></a><a href="./#-875136738%2FFunctions%2F-435046686">getPostOnViewCreatedAlpha</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getPostOnViewCreatedAlpha/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://developer.android.com/reference/kotlin/java/lang/Float.html">Float</a><a href="./#-875136738%2FFunctions%2F-435046686">getPostOnViewCreatedAlpha</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getReenterTransition/#/PointingToDeclaration/"></a><a href="./#681013480%2FFunctions%2F-435046686">getReenterTransition</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getReenterTransition/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()  <br>  <br><a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a><a href="./#681013480%2FFunctions%2F-435046686">getReenterTransition</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getResources/#/PointingToDeclaration/"></a><a href="./#-1549095459%2FFunctions%2F-435046686">getResources</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getResources/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br>final <a href="https://developer.android.com/reference/kotlin/android/content/res/Resources.html">Resources</a><a href="./#-1549095459%2FFunctions%2F-435046686">getResources</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getRetainInstance/#/PointingToDeclaration/"></a><a href="./#-625635650%2FFunctions%2F-435046686">getRetainInstance</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getRetainInstance/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html">Deprecated</a>(message = Deprecated in Java)  <br>  <br>~~final~~ <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#-625635650%2FFunctions%2F-435046686">~~getRetainInstance~~</a>~~(~~~~)~~  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getReturnTransition/#/PointingToDeclaration/"></a><a href="./#1474106483%2FFunctions%2F-435046686">getReturnTransition</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getReturnTransition/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()  <br>  <br><a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a><a href="./#1474106483%2FFunctions%2F-435046686">getReturnTransition</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getSavedStateRegistry/#/PointingToDeclaration/"></a><a href="./#-1729972751%2FFunctions%2F-435046686">getSavedStateRegistry</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getSavedStateRegistry/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br>final <a href="https://developer.android.com/reference/kotlin/androidx/savedstate/SavedStateRegistry.html">SavedStateRegistry</a><a href="./#-1729972751%2FFunctions%2F-435046686">getSavedStateRegistry</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getSharedElementEnterTransition/#/PointingToDeclaration/"></a><a href="./#614476098%2FFunctions%2F-435046686">getSharedElementEnterTransition</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getSharedElementEnterTransition/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()  <br>  <br><a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a><a href="./#614476098%2FFunctions%2F-435046686">getSharedElementEnterTransition</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getSharedElementReturnTransition/#/PointingToDeclaration/"></a><a href="./#-729699386%2FFunctions%2F-435046686">getSharedElementReturnTransition</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getSharedElementReturnTransition/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()  <br>  <br><a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a><a href="./#-729699386%2FFunctions%2F-435046686">getSharedElementReturnTransition</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getSharedElementSourceNames/#/PointingToDeclaration/"></a><a href="./#-816025438%2FFunctions%2F-435046686">getSharedElementSourceNames</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getSharedElementSourceNames/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br><a href="https://developer.android.com/reference/kotlin/java/util/ArrayList.html">ArrayList</a>&lt;<a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a>&gt;<a href="./#-816025438%2FFunctions%2F-435046686">getSharedElementSourceNames</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getSharedElementTargetNames/#/PointingToDeclaration/"></a><a href="./#-836696168%2FFunctions%2F-435046686">getSharedElementTargetNames</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getSharedElementTargetNames/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br><a href="https://developer.android.com/reference/kotlin/java/util/ArrayList.html">ArrayList</a>&lt;<a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a>&gt;<a href="./#-836696168%2FFunctions%2F-435046686">getSharedElementTargetNames</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getString/#kotlin.Int/PointingToDeclaration/"></a><a href="./#-1871209691%2FFunctions%2F-435046686">getString</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getString/#kotlin.Int/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br>final <a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><a href="./#-1871209691%2FFunctions%2F-435046686">getString</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/StringRes.html">StringRes</a>()<a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a>p0)  <br>  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br>final <a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><a href="./#134894955%2FFunctions%2F-435046686">getString</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/StringRes.html">StringRes</a>()<a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a>p0, @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a>p1)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getTag/#/PointingToDeclaration/"></a><a href="./#1802594760%2FFunctions%2F-435046686">getTag</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getTag/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()  <br>  <br>final <a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><a href="./#1802594760%2FFunctions%2F-435046686">getTag</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getTargetFragment/#/PointingToDeclaration/"></a><a href="./#2108185175%2FFunctions%2F-435046686">getTargetFragment</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getTargetFragment/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()  <br>@<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html">Deprecated</a>(message = Deprecated in Java)  <br>  <br>~~final~~ <a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.html">Fragment</a><a href="./#2108185175%2FFunctions%2F-435046686">~~getTargetFragment~~</a>~~(~~~~)~~  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getTargetRequestCode/#/PointingToDeclaration/"></a><a href="./#-1127520521%2FFunctions%2F-435046686">getTargetRequestCode</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getTargetRequestCode/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html">Deprecated</a>(message = Deprecated in Java)  <br>  <br>~~final~~ <a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a><a href="./#-1127520521%2FFunctions%2F-435046686">~~getTargetRequestCode~~</a>~~(~~~~)~~  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getText/#kotlin.Int/PointingToDeclaration/"></a><a href="./#-229936311%2FFunctions%2F-435046686">getText</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getText/#kotlin.Int/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br>final <a href="https://developer.android.com/reference/kotlin/java/lang/CharSequence.html">CharSequence</a><a href="./#-229936311%2FFunctions%2F-435046686">getText</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/StringRes.html">StringRes</a>()<a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getUserVisibleHint/#/PointingToDeclaration/"></a><a href="./#1058312980%2FFunctions%2F-435046686">getUserVisibleHint</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getUserVisibleHint/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html">Deprecated</a>(message = Deprecated in Java)  <br>  <br><a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#1058312980%2FFunctions%2F-435046686">~~getUserVisibleHint~~</a>~~(~~~~)~~  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getView/#/PointingToDeclaration/"></a><a href="./#-838720269%2FFunctions%2F-435046686">getView</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getView/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()  <br>  <br><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><a href="./#-838720269%2FFunctions%2F-435046686">getView</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getViewLifecycleOwner/#/PointingToDeclaration/"></a><a href="./#1707438346%2FFunctions%2F-435046686">getViewLifecycleOwner</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getViewLifecycleOwner/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br><a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/LifecycleOwner.html">LifecycleOwner</a><a href="./#1707438346%2FFunctions%2F-435046686">getViewLifecycleOwner</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getViewLifecycleOwnerLiveData/#/PointingToDeclaration/"></a><a href="./#-1845465612%2FFunctions%2F-435046686">getViewLifecycleOwnerLiveData</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getViewLifecycleOwnerLiveData/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br><a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/LiveData.html">LiveData</a>&lt;<a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/LifecycleOwner.html">LifecycleOwner</a>&gt;<a href="./#-1845465612%2FFunctions%2F-435046686">getViewLifecycleOwnerLiveData</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getViewModelStore/#/PointingToDeclaration/"></a><a href="./#-1997139685%2FFunctions%2F-435046686">getViewModelStore</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/getViewModelStore/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br><a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/ViewModelStore.html">ViewModelStore</a><a href="./#-1997139685%2FFunctions%2F-435046686">getViewModelStore</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/hashCode/#/PointingToDeclaration/"></a><a href="./#-1890108879%2FFunctions%2F-435046686">hashCode</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/hashCode/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>final <a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a><a href="./#-1890108879%2FFunctions%2F-435046686">hashCode</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/hasOptionsMenu/#/PointingToDeclaration/"></a><a href="./#-133841431%2FFunctions%2F-435046686">hasOptionsMenu</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/hasOptionsMenu/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#-133841431%2FFunctions%2F-435046686">hasOptionsMenu</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/initState/#/PointingToDeclaration/"></a><a href="./#1271591213%2FFunctions%2F-435046686">initState</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/initState/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#1271591213%2FFunctions%2F-435046686">initState</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/isAdded/#/PointingToDeclaration/"></a><a href="./#1272944248%2FFunctions%2F-435046686">isAdded</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/isAdded/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#1272944248%2FFunctions%2F-435046686">isAdded</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/isDetached/#/PointingToDeclaration/"></a><a href="./#601090800%2FFunctions%2F-435046686">isDetached</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/isDetached/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#601090800%2FFunctions%2F-435046686">isDetached</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/isHidden/#/PointingToDeclaration/"></a><a href="./#1651285240%2FFunctions%2F-435046686">isHidden</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/isHidden/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#1651285240%2FFunctions%2F-435046686">isHidden</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/isHideReplaced/#/PointingToDeclaration/"></a><a href="./#1832098896%2FFunctions%2F-435046686">isHideReplaced</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/isHideReplaced/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#1832098896%2FFunctions%2F-435046686">isHideReplaced</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/isInBackStack/#/PointingToDeclaration/"></a><a href="./#-1739110276%2FFunctions%2F-435046686">isInBackStack</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/isInBackStack/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#-1739110276%2FFunctions%2F-435046686">isInBackStack</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/isInLayout/#/PointingToDeclaration/"></a><a href="./#-208101293%2FFunctions%2F-435046686">isInLayout</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/isInLayout/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#-208101293%2FFunctions%2F-435046686">isInLayout</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/isMenuVisible/#/PointingToDeclaration/"></a><a href="./#1182421125%2FFunctions%2F-435046686">isMenuVisible</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/isMenuVisible/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#1182421125%2FFunctions%2F-435046686">isMenuVisible</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/isPostponed/#/PointingToDeclaration/"></a><a href="./#1072180010%2FFunctions%2F-435046686">isPostponed</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/isPostponed/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#1072180010%2FFunctions%2F-435046686">isPostponed</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/isRemoving/#/PointingToDeclaration/"></a><a href="./#-2015844095%2FFunctions%2F-435046686">isRemoving</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/isRemoving/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#-2015844095%2FFunctions%2F-435046686">isRemoving</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/isRemovingParent/#/PointingToDeclaration/"></a><a href="./#2028914807%2FFunctions%2F-435046686">isRemovingParent</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/isRemovingParent/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#2028914807%2FFunctions%2F-435046686">isRemovingParent</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/isResumed/#/PointingToDeclaration/"></a><a href="./#1981843137%2FFunctions%2F-435046686">isResumed</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/isResumed/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#1981843137%2FFunctions%2F-435046686">isResumed</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/isStateSaved/#/PointingToDeclaration/"></a><a href="./#-1325731540%2FFunctions%2F-435046686">isStateSaved</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/isStateSaved/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#-1325731540%2FFunctions%2F-435046686">isStateSaved</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/isVisible/#/PointingToDeclaration/"></a><a href="./#886794374%2FFunctions%2F-435046686">isVisible</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/isVisible/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#886794374%2FFunctions%2F-435046686">isVisible</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/noteStateNotSaved/#/PointingToDeclaration/"></a><a href="./#-661652101%2FFunctions%2F-435046686">noteStateNotSaved</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/noteStateNotSaved/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-661652101%2FFunctions%2F-435046686">noteStateNotSaved</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onActivityCreated/#android.os.Bundle?/PointingToDeclaration/"></a><a href="./#1365846274%2FFunctions%2F-435046686">onActivityCreated</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onActivityCreated/#android.os.Bundle?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/CallSuper.html">CallSuper</a>()  <br>@<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html">Deprecated</a>(message = Deprecated in Java)  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#1365846274%2FFunctions%2F-435046686">~~onActivityCreated~~</a>~~(~~@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a>~~p0~~~~)~~  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onActivityResult/#kotlin.Int#kotlin.Int#android.content.Intent?/PointingToDeclaration/"></a><a href="./#-588294638%2FFunctions%2F-435046686">onActivityResult</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onActivityResult/#kotlin.Int#kotlin.Int#android.content.Intent?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html">Deprecated</a>(message = Deprecated in Java)  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-588294638%2FFunctions%2F-435046686">~~onActivityResult~~</a>~~(~~<a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a>~~p0~~~~,~~ <a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a>~~p1~~~~,~~ @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/android/content/Intent.html">Intent</a>~~p2~~~~)~~  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onAttach/#android.app.Activity/PointingToDeclaration/"></a><a href="./#800913421%2FFunctions%2F-435046686">onAttach</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onAttach/#android.app.Activity/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/CallSuper.html">CallSuper</a>()  <br>@<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html">Deprecated</a>(message = Deprecated in Java)  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#800913421%2FFunctions%2F-435046686">~~onAttach~~</a>~~(~~@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/app/Activity.html">Activity</a>~~p0~~~~)~~  <br>  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/CallSuper.html">CallSuper</a>()  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#276125407%2FFunctions%2F-435046686">onAttach</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onAttachFragment/#androidx.fragment.app.Fragment/PointingToDeclaration/"></a><a href="./#-973070142%2FFunctions%2F-435046686">onAttachFragment</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onAttachFragment/#androidx.fragment.app.Fragment/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>@<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html">Deprecated</a>(message = Deprecated in Java)  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-973070142%2FFunctions%2F-435046686">~~onAttachFragment~~</a>~~(~~@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.html">Fragment</a>~~p0~~~~)~~  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onConfigurationChanged/#android.content.res.Configuration/PointingToDeclaration/"></a><a href="./#395519327%2FFunctions%2F-435046686">onConfigurationChanged</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onConfigurationChanged/#android.content.res.Configuration/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/CallSuper.html">CallSuper</a>()  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#395519327%2FFunctions%2F-435046686">onConfigurationChanged</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/content/res/Configuration.html">Configuration</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onContextItemSelected/#android.view.MenuItem/PointingToDeclaration/"></a><a href="./#991249142%2FFunctions%2F-435046686">onContextItemSelected</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onContextItemSelected/#android.view.MenuItem/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>  <br><a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#991249142%2FFunctions%2F-435046686">onContextItemSelected</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/view/MenuItem.html">MenuItem</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onCreate/#android.os.Bundle?/PointingToDeclaration/"></a><a href="./#412380063%2FFunctions%2F-435046686">onCreate</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onCreate/#android.os.Bundle?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/CallSuper.html">CallSuper</a>()  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#412380063%2FFunctions%2F-435046686">onCreate</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onCreateAnimation/#kotlin.Int#kotlin.Boolean#kotlin.Int/PointingToDeclaration/"></a><a href="./#-1306857092%2FFunctions%2F-435046686">onCreateAnimation</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onCreateAnimation/#kotlin.Int#kotlin.Boolean#kotlin.Int/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()  <br>  <br><a href="https://developer.android.com/reference/kotlin/android/view/animation/Animation.html">Animation</a><a href="./#-1306857092%2FFunctions%2F-435046686">onCreateAnimation</a>(<a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a>p0, <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a>p1, <a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a>p2)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onCreateAnimator/#kotlin.Int#kotlin.Boolean#kotlin.Int/PointingToDeclaration/"></a><a href="./#-1498818591%2FFunctions%2F-435046686">onCreateAnimator</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onCreateAnimator/#kotlin.Int#kotlin.Boolean#kotlin.Int/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()  <br>  <br><a href="https://developer.android.com/reference/kotlin/android/animation/Animator.html">Animator</a><a href="./#-1498818591%2FFunctions%2F-435046686">onCreateAnimator</a>(<a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a>p0, <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a>p1, <a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a>p2)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onCreateContextMenu/#android.view.ContextMenu#android.view.View#android.view.ContextMenu.ContextMenuInfo?/PointingToDeclaration/"></a><a href="./#-955971807%2FFunctions%2F-435046686">onCreateContextMenu</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onCreateContextMenu/#android.view.ContextMenu#android.view.View#android.view.ContextMenu.ContextMenuInfo?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-955971807%2FFunctions%2F-435046686">onCreateContextMenu</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/view/ContextMenu.html">ContextMenu</a>p0, @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a>p1, @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/android/view/ContextMenu.ContextMenuInfo.html">ContextMenu.ContextMenuInfo</a>p2)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onCreateOptionsMenu/#android.view.Menu#android.view.MenuInflater/PointingToDeclaration/"></a><a href="./#-1920991556%2FFunctions%2F-435046686">onCreateOptionsMenu</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onCreateOptionsMenu/#android.view.Menu#android.view.MenuInflater/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-1920991556%2FFunctions%2F-435046686">onCreateOptionsMenu</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/view/Menu.html">Menu</a>p0, @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/view/MenuInflater.html">MenuInflater</a>p1)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="com.bjnclientcore.ui.base/RemoteVideoFragment/onCreateView/#android.view.LayoutInflater#android.view.ViewGroup?#android.os.Bundle?/PointingToDeclaration/"></a><a href="./#1243568122%2FFunctions%2F-435046686">onCreateView</a></td>
+<td><a name="com.bjnclientcore.ui.base/RemoteVideoFragment/onCreateView/#android.view.LayoutInflater#android.view.ViewGroup?#android.os.Bundle?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><a href="./#1243568122%2FFunctions%2F-435046686">onCreateView</a>(<a href="https://developer.android.com/reference/kotlin/android/view/LayoutInflater.html">LayoutInflater</a>inflater, <a href="https://developer.android.com/reference/kotlin/android/view/ViewGroup.html">ViewGroup</a>container, <a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a>savedInstanceState)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onDestroy/#/PointingToDeclaration/"></a><a href="./#-339169613%2FFunctions%2F-435046686">onDestroy</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onDestroy/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/CallSuper.html">CallSuper</a>()  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-339169613%2FFunctions%2F-435046686">onDestroy</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onDestroyOptionsMenu/#/PointingToDeclaration/"></a><a href="./#-1445777238%2FFunctions%2F-435046686">onDestroyOptionsMenu</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onDestroyOptionsMenu/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-1445777238%2FFunctions%2F-435046686">onDestroyOptionsMenu</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="com.bjnclientcore.ui.base/RemoteVideoFragment/onDestroyView/#/PointingToDeclaration/"></a><a href="./#727930902%2FFunctions%2F-435046686">onDestroyView</a></td>
+<td><a name="com.bjnclientcore.ui.base/RemoteVideoFragment/onDestroyView/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#727930902%2FFunctions%2F-435046686">onDestroyView</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onDetach/#/PointingToDeclaration/"></a><a href="./#-1694166054%2FFunctions%2F-435046686">onDetach</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onDetach/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/CallSuper.html">CallSuper</a>()  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-1694166054%2FFunctions%2F-435046686">onDetach</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onGetLayoutInflater/#android.os.Bundle?/PointingToDeclaration/"></a><a href="./#1169118480%2FFunctions%2F-435046686">onGetLayoutInflater</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onGetLayoutInflater/#android.os.Bundle?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br><a href="https://developer.android.com/reference/kotlin/android/view/LayoutInflater.html">LayoutInflater</a><a href="./#1169118480%2FFunctions%2F-435046686">onGetLayoutInflater</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onHiddenChanged/#kotlin.Boolean/PointingToDeclaration/"></a><a href="./#-1798312696%2FFunctions%2F-435046686">onHiddenChanged</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onHiddenChanged/#kotlin.Boolean/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-1798312696%2FFunctions%2F-435046686">onHiddenChanged</a>(<a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onInflate/#android.app.Activity#android.util.AttributeSet#android.os.Bundle?/PointingToDeclaration/"></a><a href="./#-1544630286%2FFunctions%2F-435046686">onInflate</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onInflate/#android.app.Activity#android.util.AttributeSet#android.os.Bundle?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/UiThread.html">UiThread</a>()  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/CallSuper.html">CallSuper</a>()  <br>@<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html">Deprecated</a>(message = Deprecated in Java)  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-1544630286%2FFunctions%2F-435046686">~~onInflate~~</a>~~(~~@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/app/Activity.html">Activity</a>~~p0~~~~,~~ @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/util/AttributeSet.html">AttributeSet</a>~~p1~~~~,~~ @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a>~~p2~~~~)~~  <br>  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/UiThread.html">UiThread</a>()  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/CallSuper.html">CallSuper</a>()  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#2005154652%2FFunctions%2F-435046686">onInflate</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a>p0, @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/util/AttributeSet.html">AttributeSet</a>p1, @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a>p2)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onLowMemory/#/PointingToDeclaration/"></a><a href="./#-1700088424%2FFunctions%2F-435046686">onLowMemory</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onLowMemory/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/CallSuper.html">CallSuper</a>()  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-1700088424%2FFunctions%2F-435046686">onLowMemory</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onMultiWindowModeChanged/#kotlin.Boolean/PointingToDeclaration/"></a><a href="./#1452265034%2FFunctions%2F-435046686">onMultiWindowModeChanged</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onMultiWindowModeChanged/#kotlin.Boolean/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#1452265034%2FFunctions%2F-435046686">onMultiWindowModeChanged</a>(<a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onOptionsItemSelected/#android.view.MenuItem/PointingToDeclaration/"></a><a href="./#-1327842523%2FFunctions%2F-435046686">onOptionsItemSelected</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onOptionsItemSelected/#android.view.MenuItem/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>  <br><a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#-1327842523%2FFunctions%2F-435046686">onOptionsItemSelected</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/view/MenuItem.html">MenuItem</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onOptionsMenuClosed/#android.view.Menu/PointingToDeclaration/"></a><a href="./#-364939435%2FFunctions%2F-435046686">onOptionsMenuClosed</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onOptionsMenuClosed/#android.view.Menu/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-364939435%2FFunctions%2F-435046686">onOptionsMenuClosed</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/view/Menu.html">Menu</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onPause/#/PointingToDeclaration/"></a><a href="./#-993179593%2FFunctions%2F-435046686">onPause</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onPause/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/CallSuper.html">CallSuper</a>()  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-993179593%2FFunctions%2F-435046686">onPause</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onPictureInPictureModeChanged/#kotlin.Boolean/PointingToDeclaration/"></a><a href="./#329052%2FFunctions%2F-435046686">onPictureInPictureModeChanged</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onPictureInPictureModeChanged/#kotlin.Boolean/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#329052%2FFunctions%2F-435046686">onPictureInPictureModeChanged</a>(<a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onPrepareOptionsMenu/#android.view.Menu/PointingToDeclaration/"></a><a href="./#-1005032158%2FFunctions%2F-435046686">onPrepareOptionsMenu</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onPrepareOptionsMenu/#android.view.Menu/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-1005032158%2FFunctions%2F-435046686">onPrepareOptionsMenu</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/view/Menu.html">Menu</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onPrimaryNavigationFragmentChanged/#kotlin.Boolean/PointingToDeclaration/"></a><a href="./#2098485028%2FFunctions%2F-435046686">onPrimaryNavigationFragmentChanged</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onPrimaryNavigationFragmentChanged/#kotlin.Boolean/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#2098485028%2FFunctions%2F-435046686">onPrimaryNavigationFragmentChanged</a>(<a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onRequestPermissionsResult/#kotlin.Int#kotlin.Array[kotlin.String]#kotlin.IntArray/PointingToDeclaration/"></a><a href="./#1790153690%2FFunctions%2F-435046686">onRequestPermissionsResult</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onRequestPermissionsResult/#kotlin.Int#kotlin.Array[kotlin.String]#kotlin.IntArray/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html">Deprecated</a>(message = Deprecated in Java)  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#1790153690%2FFunctions%2F-435046686">~~onRequestPermissionsResult~~</a>~~(~~<a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a>~~p0~~~~,~~ @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a>&lt;<a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a>&gt;~~p1~~~~,~~ @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html">IntArray</a>~~p2~~~~)~~  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onResume/#/PointingToDeclaration/"></a><a href="./#-1637653376%2FFunctions%2F-435046686">onResume</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onResume/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/CallSuper.html">CallSuper</a>()  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-1637653376%2FFunctions%2F-435046686">onResume</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onSaveInstanceState/#android.os.Bundle/PointingToDeclaration/"></a><a href="./#310271015%2FFunctions%2F-435046686">onSaveInstanceState</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onSaveInstanceState/#android.os.Bundle/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#310271015%2FFunctions%2F-435046686">onSaveInstanceState</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onStart/#/PointingToDeclaration/"></a><a href="./#-371754165%2FFunctions%2F-435046686">onStart</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onStart/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/CallSuper.html">CallSuper</a>()  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-371754165%2FFunctions%2F-435046686">onStart</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onStop/#/PointingToDeclaration/"></a><a href="./#313590347%2FFunctions%2F-435046686">onStop</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onStop/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/CallSuper.html">CallSuper</a>()  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#313590347%2FFunctions%2F-435046686">onStop</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onViewStateRestored/#android.os.Bundle?/PointingToDeclaration/"></a><a href="./#1623068057%2FFunctions%2F-435046686">onViewStateRestored</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/onViewStateRestored/#android.os.Bundle?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/CallSuper.html">CallSuper</a>()  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#1623068057%2FFunctions%2F-435046686">onViewStateRestored</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/performActivityCreated/#android.os.Bundle/PointingToDeclaration/"></a><a href="./#708255041%2FFunctions%2F-435046686">performActivityCreated</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/performActivityCreated/#android.os.Bundle/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#708255041%2FFunctions%2F-435046686">performActivityCreated</a>(<a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/performAttach/#/PointingToDeclaration/"></a><a href="./#-1542010712%2FFunctions%2F-435046686">performAttach</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/performAttach/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-1542010712%2FFunctions%2F-435046686">performAttach</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/performConfigurationChanged/#android.content.res.Configuration/PointingToDeclaration/"></a><a href="./#-399786465%2FFunctions%2F-435046686">performConfigurationChanged</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/performConfigurationChanged/#android.content.res.Configuration/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-399786465%2FFunctions%2F-435046686">performConfigurationChanged</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/content/res/Configuration.html">Configuration</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/performContextItemSelected/#android.view.MenuItem/PointingToDeclaration/"></a><a href="./#1790145078%2FFunctions%2F-435046686">performContextItemSelected</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/performContextItemSelected/#android.view.MenuItem/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#1790145078%2FFunctions%2F-435046686">performContextItemSelected</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/view/MenuItem.html">MenuItem</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/performCreate/#android.os.Bundle/PointingToDeclaration/"></a><a href="./#-826176380%2FFunctions%2F-435046686">performCreate</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/performCreate/#android.os.Bundle/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-826176380%2FFunctions%2F-435046686">performCreate</a>(<a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/performCreateOptionsMenu/#android.view.Menu#android.view.MenuInflater/PointingToDeclaration/"></a><a href="./#-43119108%2FFunctions%2F-435046686">performCreateOptionsMenu</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/performCreateOptionsMenu/#android.view.Menu#android.view.MenuInflater/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#-43119108%2FFunctions%2F-435046686">performCreateOptionsMenu</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/view/Menu.html">Menu</a>p0, @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/view/MenuInflater.html">MenuInflater</a>p1)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/performCreateView/#android.view.LayoutInflater#android.view.ViewGroup?#android.os.Bundle?/PointingToDeclaration/"></a><a href="./#1942232514%2FFunctions%2F-435046686">performCreateView</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/performCreateView/#android.view.LayoutInflater#android.view.ViewGroup?#android.os.Bundle?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#1942232514%2FFunctions%2F-435046686">performCreateView</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/view/LayoutInflater.html">LayoutInflater</a>p0, @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/android/view/ViewGroup.html">ViewGroup</a>p1, @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a>p2)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/performDestroy/#/PointingToDeclaration/"></a><a href="./#1675270003%2FFunctions%2F-435046686">performDestroy</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/performDestroy/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#1675270003%2FFunctions%2F-435046686">performDestroy</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/performDestroyView/#/PointingToDeclaration/"></a><a href="./#482465102%2FFunctions%2F-435046686">performDestroyView</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/performDestroyView/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#482465102%2FFunctions%2F-435046686">performDestroyView</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/performDetach/#/PointingToDeclaration/"></a><a href="./#-659352806%2FFunctions%2F-435046686">performDetach</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/performDetach/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-659352806%2FFunctions%2F-435046686">performDetach</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/performGetLayoutInflater/#android.os.Bundle?/PointingToDeclaration/"></a><a href="./#1296080336%2FFunctions%2F-435046686">performGetLayoutInflater</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/performGetLayoutInflater/#android.os.Bundle?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br><a href="https://developer.android.com/reference/kotlin/android/view/LayoutInflater.html">LayoutInflater</a><a href="./#1296080336%2FFunctions%2F-435046686">performGetLayoutInflater</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/performLowMemory/#/PointingToDeclaration/"></a><a href="./#1441099352%2FFunctions%2F-435046686">performLowMemory</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/performLowMemory/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#1441099352%2FFunctions%2F-435046686">performLowMemory</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/performMultiWindowModeChanged/#kotlin.Boolean/PointingToDeclaration/"></a><a href="./#1093115274%2FFunctions%2F-435046686">performMultiWindowModeChanged</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/performMultiWindowModeChanged/#kotlin.Boolean/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#1093115274%2FFunctions%2F-435046686">performMultiWindowModeChanged</a>(<a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/performOptionsItemSelected/#android.view.MenuItem/PointingToDeclaration/"></a><a href="./#-528946587%2FFunctions%2F-435046686">performOptionsItemSelected</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/performOptionsItemSelected/#android.view.MenuItem/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#-528946587%2FFunctions%2F-435046686">performOptionsItemSelected</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/view/MenuItem.html">MenuItem</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/performOptionsMenuClosed/#android.view.Menu/PointingToDeclaration/"></a><a href="./#-83749227%2FFunctions%2F-435046686">performOptionsMenuClosed</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/performOptionsMenuClosed/#android.view.Menu/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-83749227%2FFunctions%2F-435046686">performOptionsMenuClosed</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/view/Menu.html">Menu</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/performPause/#/PointingToDeclaration/"></a><a href="./#-1513987849%2FFunctions%2F-435046686">performPause</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/performPause/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-1513987849%2FFunctions%2F-435046686">performPause</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/performPictureInPictureModeChanged/#kotlin.Boolean/PointingToDeclaration/"></a><a href="./#-1003700708%2FFunctions%2F-435046686">performPictureInPictureModeChanged</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/performPictureInPictureModeChanged/#kotlin.Boolean/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-1003700708%2FFunctions%2F-435046686">performPictureInPictureModeChanged</a>(<a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/performPrepareOptionsMenu/#android.view.Menu/PointingToDeclaration/"></a><a href="./#-878070302%2FFunctions%2F-435046686">performPrepareOptionsMenu</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/performPrepareOptionsMenu/#android.view.Menu/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#-878070302%2FFunctions%2F-435046686">performPrepareOptionsMenu</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/view/Menu.html">Menu</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/performPrimaryNavigationFragmentChanged/#/PointingToDeclaration/"></a><a href="./#-637566625%2FFunctions%2F-435046686">performPrimaryNavigationFragmentChanged</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/performPrimaryNavigationFragmentChanged/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-637566625%2FFunctions%2F-435046686">performPrimaryNavigationFragmentChanged</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/performResume/#/PointingToDeclaration/"></a><a href="./#-602840128%2FFunctions%2F-435046686">performResume</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/performResume/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-602840128%2FFunctions%2F-435046686">performResume</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/performSaveInstanceState/#android.os.Bundle/PointingToDeclaration/"></a><a href="./#591461223%2FFunctions%2F-435046686">performSaveInstanceState</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/performSaveInstanceState/#android.os.Bundle/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#591461223%2FFunctions%2F-435046686">performSaveInstanceState</a>(<a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/performStart/#/PointingToDeclaration/"></a><a href="./#-892562421%2FFunctions%2F-435046686">performStart</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/performStart/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-892562421%2FFunctions%2F-435046686">performStart</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/performStop/#/PointingToDeclaration/"></a><a href="./#-1504325237%2FFunctions%2F-435046686">performStop</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/performStop/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-1504325237%2FFunctions%2F-435046686">performStop</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/performViewCreated/#/PointingToDeclaration/"></a><a href="./#856388362%2FFunctions%2F-435046686">performViewCreated</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/performViewCreated/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#856388362%2FFunctions%2F-435046686">performViewCreated</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/postponeEnterTransition/#/PointingToDeclaration/"></a><a href="./#-830261577%2FFunctions%2F-435046686">postponeEnterTransition</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/postponeEnterTransition/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-830261577%2FFunctions%2F-435046686">postponeEnterTransition</a>()  <br>  <br>final <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-714156739%2FFunctions%2F-435046686">postponeEnterTransition</a>(<a href="https://developer.android.com/reference/kotlin/java/lang/Long.html">Long</a>p0, @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit.html">TimeUnit</a>p1)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/registerForActivityResult/#androidx.activity.result.contract.ActivityResultContract[TypeParam(bounds=[kotlin.Any]),TypeParam(bounds=[kotlin.Any])]#androidx.activity.result.ActivityResultCallback[TypeParam(bounds=[kotlin.Any])]/PointingToDeclaration/"></a><a href="./#1508919689%2FFunctions%2F-435046686">registerForActivityResult</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/registerForActivityResult/#androidx.activity.result.contract.ActivityResultContract[TypeParam(bounds=[kotlin.Any]),TypeParam(bounds=[kotlin.Any])]#androidx.activity.result.ActivityResultCallback[TypeParam(bounds=[kotlin.Any])]/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br>final <a href="https://developer.android.com/reference/kotlin/androidx/activity/result/ActivityResultLauncher.html">ActivityResultLauncher</a>&lt;<a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.html#registerforactivityresult">I</a>&gt;<a href="./#1508919689%2FFunctions%2F-435046686">registerForActivityResult</a><I extends <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>, O extends <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/androidx/activity/result/contract/ActivityResultContract.html">ActivityResultContract</a>&lt;<a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.html#registerforactivityresult">I</a>, <a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.html#registerforactivityresult">O</a>&gt;p0, @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/androidx/activity/result/ActivityResultCallback.html">ActivityResultCallback</a>&lt;<a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.html#registerforactivityresult">O</a>&gt;p1)  <br>  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br>final <a href="https://developer.android.com/reference/kotlin/androidx/activity/result/ActivityResultLauncher.html">ActivityResultLauncher</a>&lt;<a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.html#registerforactivityresult">I</a>&gt;<a href="./#-503023380%2FFunctions%2F-435046686">registerForActivityResult</a><I extends <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>, O extends <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/androidx/activity/result/contract/ActivityResultContract.html">ActivityResultContract</a>&lt;<a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.html#registerforactivityresult">I</a>, <a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.html#registerforactivityresult">O</a>&gt;p0, @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/androidx/activity/result/ActivityResultRegistry.html">ActivityResultRegistry</a>p1, @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/androidx/activity/result/ActivityResultCallback.html">ActivityResultCallback</a>&lt;<a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.html#registerforactivityresult">O</a>&gt;p2)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/registerForContextMenu/#android.view.View/PointingToDeclaration/"></a><a href="./#-529277969%2FFunctions%2F-435046686">registerForContextMenu</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/registerForContextMenu/#android.view.View/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-529277969%2FFunctions%2F-435046686">registerForContextMenu</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/requestPermissions/#kotlin.Array[kotlin.String]#kotlin.Int/PointingToDeclaration/"></a><a href="./#-1441822240%2FFunctions%2F-435046686">requestPermissions</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/requestPermissions/#kotlin.Array[kotlin.String]#kotlin.Int/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html">Deprecated</a>(message = Deprecated in Java)  <br>  <br>~~final~~ <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-1441822240%2FFunctions%2F-435046686">~~requestPermissions~~</a>~~(~~@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a>&lt;<a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a>&gt;~~p0~~~~,~~ <a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a>~~p1~~~~)~~  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/requireActivity/#/PointingToDeclaration/"></a><a href="./#-1232441958%2FFunctions%2F-435046686">requireActivity</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/requireActivity/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br>final <a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/FragmentActivity.html">FragmentActivity</a><a href="./#-1232441958%2FFunctions%2F-435046686">requireActivity</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/requireArguments/#/PointingToDeclaration/"></a><a href="./#2037086875%2FFunctions%2F-435046686">requireArguments</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/requireArguments/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br>final <a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a><a href="./#2037086875%2FFunctions%2F-435046686">requireArguments</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/requireContext/#/PointingToDeclaration/"></a><a href="./#1604088162%2FFunctions%2F-435046686">requireContext</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/requireContext/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br>final <a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><a href="./#1604088162%2FFunctions%2F-435046686">requireContext</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/requireFragmentManager/#/PointingToDeclaration/"></a><a href="./#-416210028%2FFunctions%2F-435046686">requireFragmentManager</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/requireFragmentManager/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>@<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html">Deprecated</a>(message = Deprecated in Java)  <br>  <br>~~final~~ <a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/FragmentManager.html">FragmentManager</a><a href="./#-416210028%2FFunctions%2F-435046686">~~requireFragmentManager~~</a>~~(~~~~)~~  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/requireHost/#/PointingToDeclaration/"></a><a href="./#-319340767%2FFunctions%2F-435046686">requireHost</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/requireHost/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br>final <a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a><a href="./#-319340767%2FFunctions%2F-435046686">requireHost</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/requireParentFragment/#/PointingToDeclaration/"></a><a href="./#-1167624977%2FFunctions%2F-435046686">requireParentFragment</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/requireParentFragment/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br>final <a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.html">Fragment</a><a href="./#-1167624977%2FFunctions%2F-435046686">requireParentFragment</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/requireView/#/PointingToDeclaration/"></a><a href="./#1837932740%2FFunctions%2F-435046686">requireView</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/requireView/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br>final <a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><a href="./#1837932740%2FFunctions%2F-435046686">requireView</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/restoreChildFragmentState/#android.os.Bundle?/PointingToDeclaration/"></a><a href="./#-362708023%2FFunctions%2F-435046686">restoreChildFragmentState</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/restoreChildFragmentState/#android.os.Bundle?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-362708023%2FFunctions%2F-435046686">restoreChildFragmentState</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/restoreViewState/#android.os.Bundle/PointingToDeclaration/"></a><a href="./#-725766841%2FFunctions%2F-435046686">restoreViewState</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/restoreViewState/#android.os.Bundle/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>final <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-725766841%2FFunctions%2F-435046686">restoreViewState</a>(<a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setAllowEnterTransitionOverlap/#kotlin.Boolean/PointingToDeclaration/"></a><a href="./#185311664%2FFunctions%2F-435046686">setAllowEnterTransitionOverlap</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setAllowEnterTransitionOverlap/#kotlin.Boolean/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#185311664%2FFunctions%2F-435046686">setAllowEnterTransitionOverlap</a>(<a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setAllowReturnTransitionOverlap/#kotlin.Boolean/PointingToDeclaration/"></a><a href="./#-1878026952%2FFunctions%2F-435046686">setAllowReturnTransitionOverlap</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setAllowReturnTransitionOverlap/#kotlin.Boolean/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-1878026952%2FFunctions%2F-435046686">setAllowReturnTransitionOverlap</a>(<a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setAnimatingAway/#android.view.View/PointingToDeclaration/"></a><a href="./#1332130737%2FFunctions%2F-435046686">setAnimatingAway</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setAnimatingAway/#android.view.View/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#1332130737%2FFunctions%2F-435046686">setAnimatingAway</a>(<a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setAnimator/#android.animation.Animator/PointingToDeclaration/"></a><a href="./#1010013909%2FFunctions%2F-435046686">setAnimator</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setAnimator/#android.animation.Animator/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#1010013909%2FFunctions%2F-435046686">setAnimator</a>(<a href="https://developer.android.com/reference/kotlin/android/animation/Animator.html">Animator</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setArguments/#android.os.Bundle?/PointingToDeclaration/"></a><a href="./#1043606310%2FFunctions%2F-435046686">setArguments</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setArguments/#android.os.Bundle?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#1043606310%2FFunctions%2F-435046686">setArguments</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setEnterSharedElementCallback/#androidx.core.app.SharedElementCallback?/PointingToDeclaration/"></a><a href="./#-321500818%2FFunctions%2F-435046686">setEnterSharedElementCallback</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setEnterSharedElementCallback/#androidx.core.app.SharedElementCallback?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-321500818%2FFunctions%2F-435046686">setEnterSharedElementCallback</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/androidx/core/app/SharedElementCallback.html">SharedElementCallback</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setEnterTransition/#kotlin.Any?/PointingToDeclaration/"></a><a href="./#1648642401%2FFunctions%2F-435046686">setEnterTransition</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setEnterTransition/#kotlin.Any?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#1648642401%2FFunctions%2F-435046686">setEnterTransition</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setExitSharedElementCallback/#androidx.core.app.SharedElementCallback?/PointingToDeclaration/"></a><a href="./#-1929278346%2FFunctions%2F-435046686">setExitSharedElementCallback</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setExitSharedElementCallback/#androidx.core.app.SharedElementCallback?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-1929278346%2FFunctions%2F-435046686">setExitSharedElementCallback</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/androidx/core/app/SharedElementCallback.html">SharedElementCallback</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setExitTransition/#kotlin.Any?/PointingToDeclaration/"></a><a href="./#99955817%2FFunctions%2F-435046686">setExitTransition</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setExitTransition/#kotlin.Any?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#99955817%2FFunctions%2F-435046686">setExitTransition</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setFocusedView/#android.view.View/PointingToDeclaration/"></a><a href="./#-1222421823%2FFunctions%2F-435046686">setFocusedView</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setFocusedView/#android.view.View/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-1222421823%2FFunctions%2F-435046686">setFocusedView</a>(<a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setHasOptionsMenu/#kotlin.Boolean/PointingToDeclaration/"></a><a href="./#1582568046%2FFunctions%2F-435046686">setHasOptionsMenu</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setHasOptionsMenu/#kotlin.Boolean/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#1582568046%2FFunctions%2F-435046686">setHasOptionsMenu</a>(<a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setHideReplaced/#kotlin.Boolean/PointingToDeclaration/"></a><a href="./#647324127%2FFunctions%2F-435046686">setHideReplaced</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setHideReplaced/#kotlin.Boolean/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#647324127%2FFunctions%2F-435046686">setHideReplaced</a>(<a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setInitialSavedState/#androidx.fragment.app.Fragment.SavedState?/PointingToDeclaration/"></a><a href="./#-1153274429%2FFunctions%2F-435046686">setInitialSavedState</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setInitialSavedState/#androidx.fragment.app.Fragment.SavedState?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-1153274429%2FFunctions%2F-435046686">setInitialSavedState</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.SavedState.html">Fragment.SavedState</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setMenuVisibility/#kotlin.Boolean/PointingToDeclaration/"></a><a href="./#-544120064%2FFunctions%2F-435046686">setMenuVisibility</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setMenuVisibility/#kotlin.Boolean/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-544120064%2FFunctions%2F-435046686">setMenuVisibility</a>(<a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setNextAnim/#kotlin.Int/PointingToDeclaration/"></a><a href="./#677743462%2FFunctions%2F-435046686">setNextAnim</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setNextAnim/#kotlin.Int/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#677743462%2FFunctions%2F-435046686">setNextAnim</a>(<a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setNextTransition/#kotlin.Int/PointingToDeclaration/"></a><a href="./#-1121022814%2FFunctions%2F-435046686">setNextTransition</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setNextTransition/#kotlin.Int/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-1121022814%2FFunctions%2F-435046686">setNextTransition</a>(<a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setOnStartEnterTransitionListener/#androidx.fragment.app.Fragment.OnStartEnterTransitionListener/PointingToDeclaration/"></a><a href="./#1519946302%2FFunctions%2F-435046686">setOnStartEnterTransitionListener</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setOnStartEnterTransitionListener/#androidx.fragment.app.Fragment.OnStartEnterTransitionListener/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#1519946302%2FFunctions%2F-435046686">setOnStartEnterTransitionListener</a>(<a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.OnStartEnterTransitionListener.html">Fragment.OnStartEnterTransitionListener</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setPostOnViewCreatedAlpha/#kotlin.Float/PointingToDeclaration/"></a><a href="./#977982755%2FFunctions%2F-435046686">setPostOnViewCreatedAlpha</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setPostOnViewCreatedAlpha/#kotlin.Float/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#977982755%2FFunctions%2F-435046686">setPostOnViewCreatedAlpha</a>(<a href="https://developer.android.com/reference/kotlin/java/lang/Float.html">Float</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setReenterTransition/#kotlin.Any?/PointingToDeclaration/"></a><a href="./#1350016142%2FFunctions%2F-435046686">setReenterTransition</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setReenterTransition/#kotlin.Any?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#1350016142%2FFunctions%2F-435046686">setReenterTransition</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setRetainInstance/#kotlin.Boolean/PointingToDeclaration/"></a><a href="./#-1841974281%2FFunctions%2F-435046686">setRetainInstance</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setRetainInstance/#kotlin.Boolean/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html">Deprecated</a>(message = Deprecated in Java)  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-1841974281%2FFunctions%2F-435046686">~~setRetainInstance~~</a>~~(~~<a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a>~~p0~~~~)~~  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setReturnTransition/#kotlin.Any?/PointingToDeclaration/"></a><a href="./#2134573243%2FFunctions%2F-435046686">setReturnTransition</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setReturnTransition/#kotlin.Any?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#2134573243%2FFunctions%2F-435046686">setReturnTransition</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setSharedElementEnterTransition/#kotlin.Any?/PointingToDeclaration/"></a><a href="./#-1589251444%2FFunctions%2F-435046686">setSharedElementEnterTransition</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setSharedElementEnterTransition/#kotlin.Any?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-1589251444%2FFunctions%2F-435046686">setSharedElementEnterTransition</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setSharedElementNames/#java.util.ArrayList[kotlin.String]?#java.util.ArrayList[kotlin.String]?/PointingToDeclaration/"></a><a href="./#-110347790%2FFunctions%2F-435046686">setSharedElementNames</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setSharedElementNames/#java.util.ArrayList[kotlin.String]?#java.util.ArrayList[kotlin.String]?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-110347790%2FFunctions%2F-435046686">setSharedElementNames</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/java/util/ArrayList.html">ArrayList</a>&lt;<a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a>&gt;p0, @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/java/util/ArrayList.html">ArrayList</a>&lt;<a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a>&gt;p1)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setSharedElementReturnTransition/#kotlin.Any?/PointingToDeclaration/"></a><a href="./#544111856%2FFunctions%2F-435046686">setSharedElementReturnTransition</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setSharedElementReturnTransition/#kotlin.Any?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#544111856%2FFunctions%2F-435046686">setSharedElementReturnTransition</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setTargetFragment/#androidx.fragment.app.Fragment?#kotlin.Int/PointingToDeclaration/"></a><a href="./#362713711%2FFunctions%2F-435046686">setTargetFragment</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setTargetFragment/#androidx.fragment.app.Fragment?#kotlin.Int/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html">Deprecated</a>(message = Deprecated in Java)  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#362713711%2FFunctions%2F-435046686">~~setTargetFragment~~</a>~~(~~@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.html">Fragment</a>~~p0~~~~,~~ <a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a>~~p1~~~~)~~  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setUserVisibleHint/#kotlin.Boolean/PointingToDeclaration/"></a><a href="./#-1239944347%2FFunctions%2F-435046686">setUserVisibleHint</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/setUserVisibleHint/#kotlin.Boolean/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html">Deprecated</a>(message = Deprecated in Java)  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-1239944347%2FFunctions%2F-435046686">~~setUserVisibleHint~~</a>~~(~~<a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a>~~p0~~~~)~~  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/shouldShowRequestPermissionRationale/#kotlin.String/PointingToDeclaration/"></a><a href="./#-269931359%2FFunctions%2F-435046686">shouldShowRequestPermissionRationale</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/shouldShowRequestPermissionRationale/#kotlin.String/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#-269931359%2FFunctions%2F-435046686">shouldShowRequestPermissionRationale</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/startActivity/#android.content.Intent/PointingToDeclaration/"></a><a href="./#1048852557%2FFunctions%2F-435046686">startActivity</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/startActivity/#android.content.Intent/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#1048852557%2FFunctions%2F-435046686">startActivity</a>(<a href="https://developer.android.com/reference/kotlin/android/content/Intent.html">Intent</a>p0)  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-1590197600%2FFunctions%2F-435046686">startActivity</a>(<a href="https://developer.android.com/reference/kotlin/android/content/Intent.html">Intent</a>p0, @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a>p1)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/startActivityForResult/#android.content.Intent#kotlin.Int/PointingToDeclaration/"></a><a href="./#1145203478%2FFunctions%2F-435046686">startActivityForResult</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/startActivityForResult/#android.content.Intent#kotlin.Int/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html">Deprecated</a>(message = Deprecated in Java)  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#1145203478%2FFunctions%2F-435046686">~~startActivityForResult~~</a>~~(~~<a href="https://developer.android.com/reference/kotlin/android/content/Intent.html">Intent</a>~~p0~~~~,~~ <a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a>~~p1~~~~)~~  <br>  <br>@<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html">Deprecated</a>(message = Deprecated in Java)  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#279535927%2FFunctions%2F-435046686">~~startActivityForResult~~</a>~~(~~<a href="https://developer.android.com/reference/kotlin/android/content/Intent.html">Intent</a>~~p0~~~~,~~ <a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a>~~p1~~~~,~~ @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a>~~p2~~~~)~~  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/startIntentSenderForResult/#android.content.IntentSender#kotlin.Int#android.content.Intent?#kotlin.Int#kotlin.Int#kotlin.Int#android.os.Bundle?/PointingToDeclaration/"></a><a href="./#943072365%2FFunctions%2F-435046686">startIntentSenderForResult</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/startIntentSenderForResult/#android.content.IntentSender#kotlin.Int#android.content.Intent?#kotlin.Int#kotlin.Int#kotlin.Int#android.os.Bundle?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html">Deprecated</a>(message = Deprecated in Java)  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#943072365%2FFunctions%2F-435046686">~~startIntentSenderForResult~~</a>~~(~~<a href="https://developer.android.com/reference/kotlin/android/content/IntentSender.html">IntentSender</a>~~p0~~~~,~~ <a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a>~~p1~~~~,~~ @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/android/content/Intent.html">Intent</a>~~p2~~~~,~~ <a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a>~~p3~~~~,~~ <a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a>~~p4~~~~,~~ <a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a>~~p5~~~~,~~ @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a>~~p6~~~~)~~  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/startPostponedEnterTransition/#/PointingToDeclaration/"></a><a href="./#2031897517%2FFunctions%2F-435046686">startPostponedEnterTransition</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/startPostponedEnterTransition/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#2031897517%2FFunctions%2F-435046686">startPostponedEnterTransition</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/toString/#/PointingToDeclaration/"></a><a href="./#-2068274944%2FFunctions%2F-435046686">toString</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/toString/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><a href="./#-2068274944%2FFunctions%2F-435046686">toString</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/unregisterForContextMenu/#android.view.View/PointingToDeclaration/"></a><a href="./#-1016894904%2FFunctions%2F-435046686">unregisterForContextMenu</a></td>
+<td><a name="androidx.fragment.app/RemoteVideoFragment/unregisterForContextMenu/#android.view.View/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-1016894904%2FFunctions%2F-435046686">unregisterForContextMenu</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a>p0)  <br>  <br><br><br></td>
+</tr>
+</tbody>
+</table>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright (c) 2020 Blue Jeans Network, Inc. All rights reserved.
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.b0710199.min.js", "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.76f349be.min.js"></script>
+      
+        <script src="../../../expand_navigation.js"></script>
+      
+    
+  </body>
+</html>
