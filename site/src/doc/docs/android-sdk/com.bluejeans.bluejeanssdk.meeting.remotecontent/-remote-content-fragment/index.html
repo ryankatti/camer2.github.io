@@ -1,0 +1,1335 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Bluejeans android sdk is interface for the client whoever wants to use bluejeans apis to set up meetings.">
+      
+      
+      
+        <meta name="author" content="BlueJeans">
+      
+      
+        <link rel="canonical" href="https://github.com/ryankatti/camer2.github.io/src/doc/docs/android-sdk/com.bluejeans.bluejeanssdk.meeting.remotecontent/-remote-content-fragment/">
+      
+      <link rel="icon" href="../../../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.8">
+    
+    
+      
+        <title>Index - BlueJeans Android SDK</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../../assets/stylesheets/main.ca7ac06f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../../../assets/stylesheets/palette.f1a3b89f.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../../../../../dokka_colors.css">
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("../../../../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#remotecontentfragment" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../../../.." title="BlueJeans Android SDK" class="md-header__button md-logo" aria-label="BlueJeans Android SDK" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            BlueJeans Android SDK
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Index
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/ryankatti/camer2.github.io/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    camera2.github.io
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../../../.." title="BlueJeans Android SDK" class="md-nav__button md-logo" aria-label="BlueJeans Android SDK" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    BlueJeans Android SDK
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/ryankatti/camer2.github.io/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    camera2.github.io
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
+        User guide
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="User guide" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          User guide
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../docs/Setup.md" class="md-nav__link">
+        Integration
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../docs/index.md" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../docs/Integration.md" class="md-nav__link">
+        Integration
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../docs/cli/Sampleapp.md" class="md-nav__link">
+        Sample App
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#constructors" class="md-nav__link">
+    Constructors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inherited-properties" class="md-nav__link">
+    Inherited properties
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    Functions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inherited-functions" class="md-nav__link">
+    Inherited functions
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/ryankatti/camer2.github.io/edit/main/docs/src/doc/docs/src/doc/docs/android-sdk/com.bluejeans.bluejeanssdk.meeting.remotecontent/-remote-content-fragment/index.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <p>//<a href="../../../">android-sdk</a>/<a href="../">com.bluejeans.bluejeanssdk.meeting.remotecontent</a>/<a href="./">RemoteContentFragment</a></p>
+<h1 id="remotecontentfragment">RemoteContentFragment</h1>
+<p>[androidJvm] public final class <a href="./">RemoteContentFragment</a> extends BaseFragment&lt;<ERROR CLASS>&gt;</p>
+<p>Ui core wrapper</p>
+<h2 id="constructors">Constructors</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/RemoteContentFragment/#/PointingToDeclaration/"></a><a href="-remote-content-fragment/">RemoteContentFragment</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/RemoteContentFragment/#/PointingToDeclaration/"></a> [androidJvm] <a href="./">RemoteContentFragment</a><a href="-remote-content-fragment/">RemoteContentFragment</a>()  <br>   <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="inherited-properties">Inherited properties</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mAdded/#/PointingToDeclaration/"></a><a href="./#1262049524%2FProperties%2F-435046686">mAdded</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mAdded/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#1262049524%2FProperties%2F-435046686">mAdded</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mAnimationInfo/#/PointingToDeclaration/"></a><a href="./#1113997538%2FProperties%2F-435046686">mAnimationInfo</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mAnimationInfo/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.AnimationInfo.html">Fragment.AnimationInfo</a><a href="./#1113997538%2FProperties%2F-435046686">mAnimationInfo</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mArguments/#/PointingToDeclaration/"></a><a href="./#252426718%2FProperties%2F-435046686">mArguments</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mArguments/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a><a href="./#252426718%2FProperties%2F-435046686">mArguments</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mBackStackNesting/#/PointingToDeclaration/"></a><a href="./#1166588893%2FProperties%2F-435046686">mBackStackNesting</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mBackStackNesting/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a><a href="./#1166588893%2FProperties%2F-435046686">mBackStackNesting</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mChildFragmentManager/#/PointingToDeclaration/"></a><a href="./#-1830991547%2FProperties%2F-435046686">mChildFragmentManager</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mChildFragmentManager/#/PointingToDeclaration/"></a> [androidJvm] @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br>private final <a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/FragmentManager.html">FragmentManager</a><a href="./#-1830991547%2FProperties%2F-435046686">mChildFragmentManager</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mContainer/#/PointingToDeclaration/"></a><a href="./#-205832941%2FProperties%2F-435046686">mContainer</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mContainer/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/android/view/ViewGroup.html">ViewGroup</a><a href="./#-205832941%2FProperties%2F-435046686">mContainer</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mContainerId/#/PointingToDeclaration/"></a><a href="./#440172216%2FProperties%2F-435046686">mContainerId</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mContainerId/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a><a href="./#440172216%2FProperties%2F-435046686">mContainerId</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mDeferStart/#/PointingToDeclaration/"></a><a href="./#-2044452394%2FProperties%2F-435046686">mDeferStart</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mDeferStart/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#-2044452394%2FProperties%2F-435046686">mDeferStart</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mDetached/#/PointingToDeclaration/"></a><a href="./#-1841084684%2FProperties%2F-435046686">mDetached</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mDetached/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#-1841084684%2FProperties%2F-435046686">mDetached</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mFragmentId/#/PointingToDeclaration/"></a><a href="./#1229447867%2FProperties%2F-435046686">mFragmentId</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mFragmentId/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a><a href="./#1229447867%2FProperties%2F-435046686">mFragmentId</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mFragmentManager/#/PointingToDeclaration/"></a><a href="./#1168614551%2FProperties%2F-435046686">mFragmentManager</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mFragmentManager/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/FragmentManager.html">FragmentManager</a><a href="./#1168614551%2FProperties%2F-435046686">mFragmentManager</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mFromLayout/#/PointingToDeclaration/"></a><a href="./#-1319179534%2FProperties%2F-435046686">mFromLayout</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mFromLayout/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#-1319179534%2FProperties%2F-435046686">mFromLayout</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mHasMenu/#/PointingToDeclaration/"></a><a href="./#-1999493317%2FProperties%2F-435046686">mHasMenu</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mHasMenu/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#-1999493317%2FProperties%2F-435046686">mHasMenu</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mHidden/#/PointingToDeclaration/"></a><a href="./#1313548796%2FProperties%2F-435046686">mHidden</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mHidden/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#1313548796%2FProperties%2F-435046686">mHidden</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mHiddenChanged/#/PointingToDeclaration/"></a><a href="./#-354894710%2FProperties%2F-435046686">mHiddenChanged</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mHiddenChanged/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#-354894710%2FProperties%2F-435046686">mHiddenChanged</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mHost/#/PointingToDeclaration/"></a><a href="./#-1205386754%2FProperties%2F-435046686">mHost</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mHost/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/FragmentHostCallback.html">FragmentHostCallback</a>&lt;?&gt;<a href="./#-1205386754%2FProperties%2F-435046686">mHost</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mInLayout/#/PointingToDeclaration/"></a><a href="./#1644690519%2FProperties%2F-435046686">mInLayout</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mInLayout/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#1644690519%2FProperties%2F-435046686">mInLayout</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mIsCreated/#/PointingToDeclaration/"></a><a href="./#-1826380330%2FProperties%2F-435046686">mIsCreated</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mIsCreated/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#-1826380330%2FProperties%2F-435046686">mIsCreated</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mIsNewlyAdded/#/PointingToDeclaration/"></a><a href="./#-642008663%2FProperties%2F-435046686">mIsNewlyAdded</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mIsNewlyAdded/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#-642008663%2FProperties%2F-435046686">mIsNewlyAdded</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mLayoutInflater/#/PointingToDeclaration/"></a><a href="./#1175033969%2FProperties%2F-435046686">mLayoutInflater</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mLayoutInflater/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/android/view/LayoutInflater.html">LayoutInflater</a><a href="./#1175033969%2FProperties%2F-435046686">mLayoutInflater</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mLifecycleRegistry/#/PointingToDeclaration/"></a><a href="./#245746573%2FProperties%2F-435046686">mLifecycleRegistry</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mLifecycleRegistry/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/LifecycleRegistry.html">LifecycleRegistry</a><a href="./#245746573%2FProperties%2F-435046686">mLifecycleRegistry</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mMaxState/#/PointingToDeclaration/"></a><a href="./#-1367742151%2FProperties%2F-435046686">mMaxState</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mMaxState/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/Lifecycle.State.html">Lifecycle.State</a><a href="./#-1367742151%2FProperties%2F-435046686">mMaxState</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mMenuVisible/#/PointingToDeclaration/"></a><a href="./#-1216395775%2FProperties%2F-435046686">mMenuVisible</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mMenuVisible/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#-1216395775%2FProperties%2F-435046686">mMenuVisible</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mParentFragment/#/PointingToDeclaration/"></a><a href="./#-1670690932%2FProperties%2F-435046686">mParentFragment</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mParentFragment/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.html">Fragment</a><a href="./#-1670690932%2FProperties%2F-435046686">mParentFragment</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mPerformedCreateView/#/PointingToDeclaration/"></a><a href="./#-1639901389%2FProperties%2F-435046686">mPerformedCreateView</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mPerformedCreateView/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#-1639901389%2FProperties%2F-435046686">mPerformedCreateView</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mPostponedAlpha/#/PointingToDeclaration/"></a><a href="./#123568630%2FProperties%2F-435046686">mPostponedAlpha</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mPostponedAlpha/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/Float.html">Float</a><a href="./#123568630%2FProperties%2F-435046686">mPostponedAlpha</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mPostponedDurationRunnable/#/PointingToDeclaration/"></a><a href="./#2088053205%2FProperties%2F-435046686">mPostponedDurationRunnable</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mPostponedDurationRunnable/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/Runnable.html">Runnable</a><a href="./#2088053205%2FProperties%2F-435046686">mPostponedDurationRunnable</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mRemoving/#/PointingToDeclaration/"></a><a href="./#-163052283%2FProperties%2F-435046686">mRemoving</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mRemoving/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#-163052283%2FProperties%2F-435046686">mRemoving</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mRestored/#/PointingToDeclaration/"></a><a href="./#-1008696496%2FProperties%2F-435046686">mRestored</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mRestored/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#-1008696496%2FProperties%2F-435046686">mRestored</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mRetainInstance/#/PointingToDeclaration/"></a><a href="./#1750862828%2FProperties%2F-435046686">mRetainInstance</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mRetainInstance/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#1750862828%2FProperties%2F-435046686">mRetainInstance</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mRetainInstanceChangedWhileDetached/#/PointingToDeclaration/"></a><a href="./#-481530435%2FProperties%2F-435046686">mRetainInstanceChangedWhileDetached</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mRetainInstanceChangedWhileDetached/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#-481530435%2FProperties%2F-435046686">mRetainInstanceChangedWhileDetached</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mSavedFragmentState/#/PointingToDeclaration/"></a><a href="./#405425996%2FProperties%2F-435046686">mSavedFragmentState</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mSavedFragmentState/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a><a href="./#405425996%2FProperties%2F-435046686">mSavedFragmentState</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mSavedStateRegistryController/#/PointingToDeclaration/"></a><a href="./#433784163%2FProperties%2F-435046686">mSavedStateRegistryController</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mSavedStateRegistryController/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/androidx/savedstate/SavedStateRegistryController.html">SavedStateRegistryController</a><a href="./#433784163%2FProperties%2F-435046686">mSavedStateRegistryController</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mSavedUserVisibleHint/#/PointingToDeclaration/"></a><a href="./#2039927487%2FProperties%2F-435046686">mSavedUserVisibleHint</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mSavedUserVisibleHint/#/PointingToDeclaration/"></a> [androidJvm] @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()  <br>  <br>private final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#2039927487%2FProperties%2F-435046686">mSavedUserVisibleHint</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mSavedViewRegistryState/#/PointingToDeclaration/"></a><a href="./#1537801086%2FProperties%2F-435046686">mSavedViewRegistryState</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mSavedViewRegistryState/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a><a href="./#1537801086%2FProperties%2F-435046686">mSavedViewRegistryState</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mSavedViewState/#/PointingToDeclaration/"></a><a href="./#-1165890335%2FProperties%2F-435046686">mSavedViewState</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mSavedViewState/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/android/util/SparseArray.html">SparseArray</a>&lt;<a href="https://developer.android.com/reference/kotlin/android/os/Parcelable.html">Parcelable</a>&gt;<a href="./#-1165890335%2FProperties%2F-435046686">mSavedViewState</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mState/#/PointingToDeclaration/"></a><a href="./#2005002883%2FProperties%2F-435046686">mState</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mState/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a><a href="./#2005002883%2FProperties%2F-435046686">mState</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mTag/#/PointingToDeclaration/"></a><a href="./#-1187685030%2FProperties%2F-435046686">mTag</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mTag/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><a href="./#-1187685030%2FProperties%2F-435046686">mTag</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mTarget/#/PointingToDeclaration/"></a><a href="./#1673050101%2FProperties%2F-435046686">mTarget</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mTarget/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.html">Fragment</a><a href="./#1673050101%2FProperties%2F-435046686">mTarget</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mTargetRequestCode/#/PointingToDeclaration/"></a><a href="./#-1102269687%2FProperties%2F-435046686">mTargetRequestCode</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mTargetRequestCode/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a><a href="./#-1102269687%2FProperties%2F-435046686">mTargetRequestCode</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mTargetWho/#/PointingToDeclaration/"></a><a href="./#-21307737%2FProperties%2F-435046686">mTargetWho</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mTargetWho/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><a href="./#-21307737%2FProperties%2F-435046686">mTargetWho</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mUserVisibleHint/#/PointingToDeclaration/"></a><a href="./#1715321766%2FProperties%2F-435046686">mUserVisibleHint</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mUserVisibleHint/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#1715321766%2FProperties%2F-435046686">mUserVisibleHint</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mView/#/PointingToDeclaration/"></a><a href="./#951886753%2FProperties%2F-435046686">mView</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mView/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><a href="./#951886753%2FProperties%2F-435046686">mView</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mViewLifecycleOwner/#/PointingToDeclaration/"></a><a href="./#-1804753096%2FProperties%2F-435046686">mViewLifecycleOwner</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mViewLifecycleOwner/#/PointingToDeclaration/"></a> [androidJvm] @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()  <br>  <br>private final <a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/FragmentViewLifecycleOwner.html">FragmentViewLifecycleOwner</a><a href="./#-1804753096%2FProperties%2F-435046686">mViewLifecycleOwner</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mViewLifecycleOwnerLiveData/#/PointingToDeclaration/"></a><a href="./#-1403087326%2FProperties%2F-435046686">mViewLifecycleOwnerLiveData</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mViewLifecycleOwnerLiveData/#/PointingToDeclaration/"></a> [androidJvm] private final <a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/MutableLiveData.html">MutableLiveData</a>&lt;<a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/LifecycleOwner.html">LifecycleOwner</a>&gt;<a href="./#-1403087326%2FProperties%2F-435046686">mViewLifecycleOwnerLiveData</a>  <br>   <br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mWho/#/PointingToDeclaration/"></a><a href="./#732594614%2FProperties%2F-435046686">mWho</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/mWho/#/PointingToDeclaration/"></a> [androidJvm] @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br>private final <a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><a href="./#732594614%2FProperties%2F-435046686">mWho</a>  <br>   <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="functions">Functions</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/initialiseBinding/#android.view.LayoutInflater#android.view.ViewGroup?#android.os.Bundle?/PointingToDeclaration/"></a><a href="initialise-binding/">initialiseBinding</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/initialiseBinding/#android.view.LayoutInflater#android.view.ViewGroup?#android.os.Bundle?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="initialise-binding/">initialiseBinding</a>(<a href="https://developer.android.com/reference/kotlin/android/view/LayoutInflater.html">LayoutInflater</a>inflater, <a href="https://developer.android.com/reference/kotlin/android/view/ViewGroup.html">ViewGroup</a>container, <a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a>savedInstanceState)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/onViewCreated/#android.view.View#android.os.Bundle?/PointingToDeclaration/"></a><a href="on-view-created/">onViewCreated</a></td>
+<td><a name="com.bluejeans.bluejeanssdk.meeting.remotecontent/RemoteContentFragment/onViewCreated/#android.view.View#android.os.Bundle?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="on-view-created/">onViewCreated</a>(<a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a>view, <a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a>savedInstanceState)  <br>  <br><br><br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="inherited-functions">Inherited functions</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/callStartTransitionListener/#kotlin.Boolean/PointingToDeclaration/"></a><a href="./#-1269267352%2FFunctions%2F-435046686">callStartTransitionListener</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/callStartTransitionListener/#kotlin.Boolean/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-1269267352%2FFunctions%2F-435046686">callStartTransitionListener</a>(<a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/createFragmentContainer/#/PointingToDeclaration/"></a><a href="./#-2095425701%2FFunctions%2F-435046686">createFragmentContainer</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/createFragmentContainer/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br><a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/FragmentContainer.html">FragmentContainer</a><a href="./#-2095425701%2FFunctions%2F-435046686">createFragmentContainer</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/dump/#kotlin.String#java.io.FileDescriptor?#java.io.PrintWriter#kotlin.Array[kotlin.String]?/PointingToDeclaration/"></a><a href="./#1970719574%2FFunctions%2F-435046686">dump</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/dump/#kotlin.String#java.io.FileDescriptor?#java.io.PrintWriter#kotlin.Array[kotlin.String]?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#1970719574%2FFunctions%2F-435046686">dump</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a>p0, @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html">FileDescriptor</a>p1, @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/java/io/PrintWriter.html">PrintWriter</a>p2, @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a>&lt;<a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a>&gt;p3)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/equals/#kotlin.Any?/PointingToDeclaration/"></a><a href="./#-171012329%2FFunctions%2F-435046686">equals</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/equals/#kotlin.Any?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#-171012329%2FFunctions%2F-435046686">equals</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a>other)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/findFragmentByWho/#kotlin.String/PointingToDeclaration/"></a><a href="./#1386832978%2FFunctions%2F-435046686">findFragmentByWho</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/findFragmentByWho/#kotlin.String/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()  <br>  <br><a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.html">Fragment</a><a href="./#1386832978%2FFunctions%2F-435046686">findFragmentByWho</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/generateActivityResultKey/#/PointingToDeclaration/"></a><a href="./#10721138%2FFunctions%2F-435046686">generateActivityResultKey</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/generateActivityResultKey/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><a href="./#10721138%2FFunctions%2F-435046686">generateActivityResultKey</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getActivity/#/PointingToDeclaration/"></a><a href="./#-1500756021%2FFunctions%2F-435046686">getActivity</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getActivity/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()  <br>  <br>final <a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/FragmentActivity.html">FragmentActivity</a><a href="./#-1500756021%2FFunctions%2F-435046686">getActivity</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getAllowEnterTransitionOverlap/#/PointingToDeclaration/"></a><a href="./#-321373731%2FFunctions%2F-435046686">getAllowEnterTransitionOverlap</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getAllowEnterTransitionOverlap/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#-321373731%2FFunctions%2F-435046686">getAllowEnterTransitionOverlap</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getAllowReturnTransitionOverlap/#/PointingToDeclaration/"></a><a href="./#2067992897%2FFunctions%2F-435046686">getAllowReturnTransitionOverlap</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getAllowReturnTransitionOverlap/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#2067992897%2FFunctions%2F-435046686">getAllowReturnTransitionOverlap</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getAnimatingAway/#/PointingToDeclaration/"></a><a href="./#1159841716%2FFunctions%2F-435046686">getAnimatingAway</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getAnimatingAway/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><a href="./#1159841716%2FFunctions%2F-435046686">getAnimatingAway</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getAnimator/#/PointingToDeclaration/"></a><a href="./#1731728115%2FFunctions%2F-435046686">getAnimator</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getAnimator/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://developer.android.com/reference/kotlin/android/animation/Animator.html">Animator</a><a href="./#1731728115%2FFunctions%2F-435046686">getAnimator</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getArguments/#/PointingToDeclaration/"></a><a href="./#-1985681782%2FFunctions%2F-435046686">getArguments</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getArguments/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()  <br>  <br>final <a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a><a href="./#-1985681782%2FFunctions%2F-435046686">getArguments</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getChildFragmentManager/#/PointingToDeclaration/"></a><a href="./#1651226905%2FFunctions%2F-435046686">getChildFragmentManager</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getChildFragmentManager/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br>final <a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/FragmentManager.html">FragmentManager</a><a href="./#1651226905%2FFunctions%2F-435046686">getChildFragmentManager</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getContext/#/PointingToDeclaration/"></a><a href="./#902696209%2FFunctions%2F-435046686">getContext</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getContext/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()  <br>  <br><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><a href="./#902696209%2FFunctions%2F-435046686">getContext</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getDefaultViewModelProviderFactory/#/PointingToDeclaration/"></a><a href="./#301408906%2FFunctions%2F-435046686">getDefaultViewModelProviderFactory</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getDefaultViewModelProviderFactory/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br><a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/ViewModelProvider.Factory.html">ViewModelProvider.Factory</a><a href="./#301408906%2FFunctions%2F-435046686">getDefaultViewModelProviderFactory</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getEnterTransition/#/PointingToDeclaration/"></a><a href="./#-1762682061%2FFunctions%2F-435046686">getEnterTransition</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getEnterTransition/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()  <br>  <br><a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a><a href="./#-1762682061%2FFunctions%2F-435046686">getEnterTransition</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getEnterTransitionCallback/#/PointingToDeclaration/"></a><a href="./#-1822978962%2FFunctions%2F-435046686">getEnterTransitionCallback</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getEnterTransitionCallback/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://developer.android.com/reference/kotlin/androidx/core/app/SharedElementCallback.html">SharedElementCallback</a><a href="./#-1822978962%2FFunctions%2F-435046686">getEnterTransitionCallback</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getExitTransition/#/PointingToDeclaration/"></a><a href="./#327102599%2FFunctions%2F-435046686">getExitTransition</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getExitTransition/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()  <br>  <br><a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a><a href="./#327102599%2FFunctions%2F-435046686">getExitTransition</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getExitTransitionCallback/#/PointingToDeclaration/"></a><a href="./#-1946776126%2FFunctions%2F-435046686">getExitTransitionCallback</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getExitTransitionCallback/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://developer.android.com/reference/kotlin/androidx/core/app/SharedElementCallback.html">SharedElementCallback</a><a href="./#-1946776126%2FFunctions%2F-435046686">getExitTransitionCallback</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getFocusedView/#/PointingToDeclaration/"></a><a href="./#1265576740%2FFunctions%2F-435046686">getFocusedView</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getFocusedView/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><a href="./#1265576740%2FFunctions%2F-435046686">getFocusedView</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getFragmentManager/#/PointingToDeclaration/"></a><a href="./#-966811581%2FFunctions%2F-435046686">getFragmentManager</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getFragmentManager/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()  <br>@<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html">Deprecated</a>(message = Deprecated in Java)  <br>  <br>~~final~~ <a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/FragmentManager.html">FragmentManager</a><a href="./#-966811581%2FFunctions%2F-435046686">~~getFragmentManager~~</a>~~(~~~~)~~  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getHost/#/PointingToDeclaration/"></a><a href="./#1763170770%2FFunctions%2F-435046686">getHost</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getHost/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()  <br>  <br>final <a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a><a href="./#1763170770%2FFunctions%2F-435046686">getHost</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getId/#/PointingToDeclaration/"></a><a href="./#-587496193%2FFunctions%2F-435046686">getId</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getId/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>final <a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a><a href="./#-587496193%2FFunctions%2F-435046686">getId</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getLayoutInflater/#/PointingToDeclaration/"></a><a href="./#-1110608059%2FFunctions%2F-435046686">getLayoutInflater</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getLayoutInflater/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br>final <a href="https://developer.android.com/reference/kotlin/android/view/LayoutInflater.html">LayoutInflater</a><a href="./#-1110608059%2FFunctions%2F-435046686">getLayoutInflater</a>()  <br>  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>@<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html">Deprecated</a>(message = Deprecated in Java)  <br>  <br><a href="https://developer.android.com/reference/kotlin/android/view/LayoutInflater.html">LayoutInflater</a><a href="./#-371139757%2FFunctions%2F-435046686">~~getLayoutInflater~~</a>~~(~~@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a>~~p0~~~~)~~  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getLifecycle/#/PointingToDeclaration/"></a><a href="./#-590825738%2FFunctions%2F-435046686">getLifecycle</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getLifecycle/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br><a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/Lifecycle.html">Lifecycle</a><a href="./#-590825738%2FFunctions%2F-435046686">getLifecycle</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getLoaderManager/#/PointingToDeclaration/"></a><a href="./#1164709574%2FFunctions%2F-435046686">getLoaderManager</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getLoaderManager/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>@<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html">Deprecated</a>(message = Deprecated in Java)  <br>  <br><a href="https://developer.android.com/reference/kotlin/androidx/loader/app/LoaderManager.html">LoaderManager</a><a href="./#1164709574%2FFunctions%2F-435046686">~~getLoaderManager~~</a>~~(~~~~)~~  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getNextAnim/#/PointingToDeclaration/"></a><a href="./#265227478%2FFunctions%2F-435046686">getNextAnim</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getNextAnim/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a><a href="./#265227478%2FFunctions%2F-435046686">getNextAnim</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getNextTransition/#/PointingToDeclaration/"></a><a href="./#305899154%2FFunctions%2F-435046686">getNextTransition</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getNextTransition/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a><a href="./#305899154%2FFunctions%2F-435046686">getNextTransition</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getParentFragment/#/PointingToDeclaration/"></a><a href="./#338634336%2FFunctions%2F-435046686">getParentFragment</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getParentFragment/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()  <br>  <br>final <a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.html">Fragment</a><a href="./#338634336%2FFunctions%2F-435046686">getParentFragment</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getParentFragmentManager/#/PointingToDeclaration/"></a><a href="./#1423209677%2FFunctions%2F-435046686">getParentFragmentManager</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getParentFragmentManager/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br>final <a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/FragmentManager.html">FragmentManager</a><a href="./#1423209677%2FFunctions%2F-435046686">getParentFragmentManager</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getPostOnViewCreatedAlpha/#/PointingToDeclaration/"></a><a href="./#-2018659552%2FFunctions%2F-435046686">getPostOnViewCreatedAlpha</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getPostOnViewCreatedAlpha/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://developer.android.com/reference/kotlin/java/lang/Float.html">Float</a><a href="./#-2018659552%2FFunctions%2F-435046686">getPostOnViewCreatedAlpha</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getReenterTransition/#/PointingToDeclaration/"></a><a href="./#1556118950%2FFunctions%2F-435046686">getReenterTransition</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getReenterTransition/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()  <br>  <br><a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a><a href="./#1556118950%2FFunctions%2F-435046686">getReenterTransition</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getResources/#/PointingToDeclaration/"></a><a href="./#-2091689829%2FFunctions%2F-435046686">getResources</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getResources/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br>final <a href="https://developer.android.com/reference/kotlin/android/content/res/Resources.html">Resources</a><a href="./#-2091689829%2FFunctions%2F-435046686">getResources</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getRetainInstance/#/PointingToDeclaration/"></a><a href="./#-534779200%2FFunctions%2F-435046686">getRetainInstance</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getRetainInstance/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html">Deprecated</a>(message = Deprecated in Java)  <br>  <br>~~final~~ <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#-534779200%2FFunctions%2F-435046686">~~getRetainInstance~~</a>~~(~~~~)~~  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getReturnTransition/#/PointingToDeclaration/"></a><a href="./#-1407158283%2FFunctions%2F-435046686">getReturnTransition</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getReturnTransition/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()  <br>  <br><a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a><a href="./#-1407158283%2FFunctions%2F-435046686">getReturnTransition</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getSavedStateRegistry/#/PointingToDeclaration/"></a><a href="./#-371506957%2FFunctions%2F-435046686">getSavedStateRegistry</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getSavedStateRegistry/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br>final <a href="https://developer.android.com/reference/kotlin/androidx/savedstate/SavedStateRegistry.html">SavedStateRegistry</a><a href="./#-371506957%2FFunctions%2F-435046686">getSavedStateRegistry</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getSharedElementEnterTransition/#/PointingToDeclaration/"></a><a href="./#-160409148%2FFunctions%2F-435046686">getSharedElementEnterTransition</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getSharedElementEnterTransition/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()  <br>  <br><a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a><a href="./#-160409148%2FFunctions%2F-435046686">getSharedElementEnterTransition</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getSharedElementReturnTransition/#/PointingToDeclaration/"></a><a href="./#1018661764%2FFunctions%2F-435046686">getSharedElementReturnTransition</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getSharedElementReturnTransition/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()  <br>  <br><a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a><a href="./#1018661764%2FFunctions%2F-435046686">getSharedElementReturnTransition</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getSharedElementSourceNames/#/PointingToDeclaration/"></a><a href="./#-229821916%2FFunctions%2F-435046686">getSharedElementSourceNames</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getSharedElementSourceNames/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br><a href="https://developer.android.com/reference/kotlin/java/util/ArrayList.html">ArrayList</a>&lt;<a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a>&gt;<a href="./#-229821916%2FFunctions%2F-435046686">getSharedElementSourceNames</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getSharedElementTargetNames/#/PointingToDeclaration/"></a><a href="./#-250492646%2FFunctions%2F-435046686">getSharedElementTargetNames</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getSharedElementTargetNames/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br><a href="https://developer.android.com/reference/kotlin/java/util/ArrayList.html">ArrayList</a>&lt;<a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a>&gt;<a href="./#-250492646%2FFunctions%2F-435046686">getSharedElementTargetNames</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getString/#kotlin.Int/PointingToDeclaration/"></a><a href="./#-457507161%2FFunctions%2F-435046686">getString</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getString/#kotlin.Int/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br>final <a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><a href="./#-457507161%2FFunctions%2F-435046686">getString</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/StringRes.html">StringRes</a>()<a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a>p0)  <br>  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br>final <a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><a href="./#-257390551%2FFunctions%2F-435046686">getString</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/StringRes.html">StringRes</a>()<a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a>p0, @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a>p1)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getTag/#/PointingToDeclaration/"></a><a href="./#-1230472442%2FFunctions%2F-435046686">getTag</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getTag/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()  <br>  <br>final <a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><a href="./#-1230472442%2FFunctions%2F-435046686">getTag</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getTargetFragment/#/PointingToDeclaration/"></a><a href="./#-2095925671%2FFunctions%2F-435046686">getTargetFragment</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getTargetFragment/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()  <br>@<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html">Deprecated</a>(message = Deprecated in Java)  <br>  <br>~~final~~ <a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.html">Fragment</a><a href="./#-2095925671%2FFunctions%2F-435046686">~~getTargetFragment~~</a>~~(~~~~)~~  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getTargetRequestCode/#/PointingToDeclaration/"></a><a href="./#-252415051%2FFunctions%2F-435046686">getTargetRequestCode</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getTargetRequestCode/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html">Deprecated</a>(message = Deprecated in Java)  <br>  <br>~~final~~ <a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a><a href="./#-252415051%2FFunctions%2F-435046686">~~getTargetRequestCode~~</a>~~(~~~~)~~  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getText/#kotlin.Int/PointingToDeclaration/"></a><a href="./#-139079861%2FFunctions%2F-435046686">getText</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getText/#kotlin.Int/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br>final <a href="https://developer.android.com/reference/kotlin/java/lang/CharSequence.html">CharSequence</a><a href="./#-139079861%2FFunctions%2F-435046686">getText</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/StringRes.html">StringRes</a>()<a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getUserVisibleHint/#/PointingToDeclaration/"></a><a href="./#-420104366%2FFunctions%2F-435046686">getUserVisibleHint</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getUserVisibleHint/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html">Deprecated</a>(message = Deprecated in Java)  <br>  <br><a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#-420104366%2FFunctions%2F-435046686">~~getUserVisibleHint~~</a>~~(~~~~)~~  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getView/#/PointingToDeclaration/"></a><a href="./#-374523019%2FFunctions%2F-435046686">getView</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getView/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()  <br>  <br><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><a href="./#-374523019%2FFunctions%2F-435046686">getView</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getViewLifecycleOwner/#/PointingToDeclaration/"></a><a href="./#-1229063156%2FFunctions%2F-435046686">getViewLifecycleOwner</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getViewLifecycleOwner/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br><a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/LifecycleOwner.html">LifecycleOwner</a><a href="./#-1229063156%2FFunctions%2F-435046686">getViewLifecycleOwner</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getViewLifecycleOwnerLiveData/#/PointingToDeclaration/"></a><a href="./#-1144596746%2FFunctions%2F-435046686">getViewLifecycleOwnerLiveData</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getViewLifecycleOwnerLiveData/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br><a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/LiveData.html">LiveData</a>&lt;<a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/LifecycleOwner.html">LifecycleOwner</a>&gt;<a href="./#-1144596746%2FFunctions%2F-435046686">getViewLifecycleOwnerLiveData</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getViewModelStore/#/PointingToDeclaration/"></a><a href="./#-1906283235%2FFunctions%2F-435046686">getViewModelStore</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/getViewModelStore/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br><a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/ViewModelStore.html">ViewModelStore</a><a href="./#-1906283235%2FFunctions%2F-435046686">getViewModelStore</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/hashCode/#/PointingToDeclaration/"></a><a href="./#-384896017%2FFunctions%2F-435046686">hashCode</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/hashCode/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>final <a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a><a href="./#-384896017%2FFunctions%2F-435046686">hashCode</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/hasOptionsMenu/#/PointingToDeclaration/"></a><a href="./#-1875988185%2FFunctions%2F-435046686">hasOptionsMenu</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/hasOptionsMenu/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#-1875988185%2FFunctions%2F-435046686">hasOptionsMenu</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/initState/#/PointingToDeclaration/"></a><a href="./#688549679%2FFunctions%2F-435046686">initState</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/initState/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#688549679%2FFunctions%2F-435046686">initState</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/isAdded/#/PointingToDeclaration/"></a><a href="./#1737141498%2FFunctions%2F-435046686">isAdded</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/isAdded/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#1737141498%2FFunctions%2F-435046686">isAdded</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/isDetached/#/PointingToDeclaration/"></a><a href="./#-293327570%2FFunctions%2F-435046686">isDetached</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/isDetached/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#-293327570%2FFunctions%2F-435046686">isDetached</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/isHidden/#/PointingToDeclaration/"></a><a href="./#-1138469194%2FFunctions%2F-435046686">isHidden</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/isHidden/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#-1138469194%2FFunctions%2F-435046686">isHidden</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/isHideReplaced/#/PointingToDeclaration/"></a><a href="./#89952142%2FFunctions%2F-435046686">isHideReplaced</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/isHideReplaced/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#89952142%2FFunctions%2F-435046686">isHideReplaced</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/isInBackStack/#/PointingToDeclaration/"></a><a href="./#-1379666562%2FFunctions%2F-435046686">isInBackStack</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/isInBackStack/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#-1379666562%2FFunctions%2F-435046686">isInBackStack</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/isInLayout/#/PointingToDeclaration/"></a><a href="./#-1102519663%2FFunctions%2F-435046686">isInLayout</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/isInLayout/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#-1102519663%2FFunctions%2F-435046686">isInLayout</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/isMenuVisible/#/PointingToDeclaration/"></a><a href="./#1541864839%2FFunctions%2F-435046686">isMenuVisible</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/isMenuVisible/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#1541864839%2FFunctions%2F-435046686">isMenuVisible</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/isPostponed/#/PointingToDeclaration/"></a><a href="./#-884985684%2FFunctions%2F-435046686">isPostponed</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/isPostponed/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#-884985684%2FFunctions%2F-435046686">isPostponed</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/isRemoving/#/PointingToDeclaration/"></a><a href="./#1384704831%2FFunctions%2F-435046686">isRemoving</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/isRemoving/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#1384704831%2FFunctions%2F-435046686">isRemoving</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/isRemovingParent/#/PointingToDeclaration/"></a><a href="./#-1431837643%2FFunctions%2F-435046686">isRemovingParent</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/isRemovingParent/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#-1431837643%2FFunctions%2F-435046686">isRemovingParent</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/isResumed/#/PointingToDeclaration/"></a><a href="./#1398801603%2FFunctions%2F-435046686">isResumed</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/isResumed/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#1398801603%2FFunctions%2F-435046686">isResumed</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/isStateSaved/#/PointingToDeclaration/"></a><a href="./#-1868325910%2FFunctions%2F-435046686">isStateSaved</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/isStateSaved/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#-1868325910%2FFunctions%2F-435046686">isStateSaved</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/isVisible/#/PointingToDeclaration/"></a><a href="./#303752840%2FFunctions%2F-435046686">isVisible</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/isVisible/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>final <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#303752840%2FFunctions%2F-435046686">isVisible</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/noteStateNotSaved/#/PointingToDeclaration/"></a><a href="./#-570795651%2FFunctions%2F-435046686">noteStateNotSaved</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/noteStateNotSaved/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-570795651%2FFunctions%2F-435046686">noteStateNotSaved</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onActivityCreated/#android.os.Bundle?/PointingToDeclaration/"></a><a href="./#1724467332%2FFunctions%2F-435046686">onActivityCreated</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onActivityCreated/#android.os.Bundle?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/CallSuper.html">CallSuper</a>()  <br>@<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html">Deprecated</a>(message = Deprecated in Java)  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#1724467332%2FFunctions%2F-435046686">~~onActivityCreated~~</a>~~(~~@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a>~~p0~~~~)~~  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onActivityResult/#kotlin.Int#kotlin.Int#android.content.Intent?/PointingToDeclaration/"></a><a href="./#-427739372%2FFunctions%2F-435046686">onActivityResult</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onActivityResult/#kotlin.Int#kotlin.Int#android.content.Intent?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html">Deprecated</a>(message = Deprecated in Java)  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-427739372%2FFunctions%2F-435046686">~~onActivityResult~~</a>~~(~~<a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a>~~p0~~~~,~~ <a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a>~~p1~~~~,~~ @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/android/content/Intent.html">Intent</a>~~p2~~~~)~~  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onAttach/#android.app.Activity/PointingToDeclaration/"></a><a href="./#1793353419%2FFunctions%2F-435046686">onAttach</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onAttach/#android.app.Activity/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/CallSuper.html">CallSuper</a>()  <br>@<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html">Deprecated</a>(message = Deprecated in Java)  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#1793353419%2FFunctions%2F-435046686">~~onAttach~~</a>~~(~~@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/app/Activity.html">Activity</a>~~p0~~~~)~~  <br>  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/CallSuper.html">CallSuper</a>()  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-498759839%2FFunctions%2F-435046686">onAttach</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onAttachFragment/#androidx.fragment.app.Fragment/PointingToDeclaration/"></a><a href="./#-2319360%2FFunctions%2F-435046686">onAttachFragment</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onAttachFragment/#androidx.fragment.app.Fragment/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>@<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html">Deprecated</a>(message = Deprecated in Java)  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-2319360%2FFunctions%2F-435046686">~~onAttachFragment~~</a>~~(~~@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.html">Fragment</a>~~p0~~~~)~~  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onConfigurationChanged/#android.content.res.Configuration/PointingToDeclaration/"></a><a href="./#-1470468127%2FFunctions%2F-435046686">onConfigurationChanged</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onConfigurationChanged/#android.content.res.Configuration/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/CallSuper.html">CallSuper</a>()  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-1470468127%2FFunctions%2F-435046686">onConfigurationChanged</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/content/res/Configuration.html">Configuration</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onContextItemSelected/#android.view.MenuItem/PointingToDeclaration/"></a><a href="./#1585253684%2FFunctions%2F-435046686">onContextItemSelected</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onContextItemSelected/#android.view.MenuItem/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>  <br><a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#1585253684%2FFunctions%2F-435046686">onContextItemSelected</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/view/MenuItem.html">MenuItem</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onCreate/#android.os.Bundle?/PointingToDeclaration/"></a><a href="./#-677088803%2FFunctions%2F-435046686">onCreate</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onCreate/#android.os.Bundle?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/CallSuper.html">CallSuper</a>()  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-677088803%2FFunctions%2F-435046686">onCreate</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onCreateAnimation/#kotlin.Int#kotlin.Boolean#kotlin.Int/PointingToDeclaration/"></a><a href="./#1104606334%2FFunctions%2F-435046686">onCreateAnimation</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onCreateAnimation/#kotlin.Int#kotlin.Boolean#kotlin.Int/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()  <br>  <br><a href="https://developer.android.com/reference/kotlin/android/view/animation/Animation.html">Animation</a><a href="./#1104606334%2FFunctions%2F-435046686">onCreateAnimation</a>(<a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a>p0, <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a>p1, <a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a>p2)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onCreateAnimator/#kotlin.Int#kotlin.Boolean#kotlin.Int/PointingToDeclaration/"></a><a href="./#2042653855%2FFunctions%2F-435046686">onCreateAnimator</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onCreateAnimator/#kotlin.Int#kotlin.Boolean#kotlin.Int/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()  <br>  <br><a href="https://developer.android.com/reference/kotlin/android/animation/Animator.html">Animator</a><a href="./#2042653855%2FFunctions%2F-435046686">onCreateAnimator</a>(<a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a>p0, <a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a>p1, <a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a>p2)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onCreateContextMenu/#android.view.ContextMenu#android.view.View#android.view.ContextMenu.ContextMenuInfo?/PointingToDeclaration/"></a><a href="./#-1741650525%2FFunctions%2F-435046686">onCreateContextMenu</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onCreateContextMenu/#android.view.ContextMenu#android.view.View#android.view.ContextMenu.ContextMenuInfo?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-1741650525%2FFunctions%2F-435046686">onCreateContextMenu</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/view/ContextMenu.html">ContextMenu</a>p0, @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a>p1, @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/android/view/ContextMenu.ContextMenuInfo.html">ContextMenu.ContextMenuInfo</a>p2)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onCreateOptionsMenu/#android.view.Menu#android.view.MenuInflater/PointingToDeclaration/"></a><a href="./#-1238745606%2FFunctions%2F-435046686">onCreateOptionsMenu</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onCreateOptionsMenu/#android.view.Menu#android.view.MenuInflater/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-1238745606%2FFunctions%2F-435046686">onCreateOptionsMenu</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/view/Menu.html">Menu</a>p0, @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/view/MenuInflater.html">MenuInflater</a>p1)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="com.bjnclientcore.ui.base/RemoteContentFragment/onCreateView/#android.view.LayoutInflater#android.view.ViewGroup?#android.os.Bundle?/PointingToDeclaration/"></a><a href="./#-711258568%2FFunctions%2F-435046686">onCreateView</a></td>
+<td><a name="com.bjnclientcore.ui.base/RemoteContentFragment/onCreateView/#android.view.LayoutInflater#android.view.ViewGroup?#android.os.Bundle?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><a href="./#-711258568%2FFunctions%2F-435046686">onCreateView</a>(<a href="https://developer.android.com/reference/kotlin/android/view/LayoutInflater.html">LayoutInflater</a>inflater, <a href="https://developer.android.com/reference/kotlin/android/view/ViewGroup.html">ViewGroup</a>container, <a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a>savedInstanceState)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onDestroy/#/PointingToDeclaration/"></a><a href="./#-922211147%2FFunctions%2F-435046686">onDestroy</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onDestroy/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/CallSuper.html">CallSuper</a>()  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-922211147%2FFunctions%2F-435046686">onDestroy</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onDestroyOptionsMenu/#/PointingToDeclaration/"></a><a href="./#-570671768%2FFunctions%2F-435046686">onDestroyOptionsMenu</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onDestroyOptionsMenu/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-570671768%2FFunctions%2F-435046686">onDestroyOptionsMenu</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="com.bjnclientcore.ui.base/RemoteContentFragment/onDestroyView/#/PointingToDeclaration/"></a><a href="./#12272408%2FFunctions%2F-435046686">onDestroyView</a></td>
+<td><a name="com.bjnclientcore.ui.base/RemoteContentFragment/onDestroyView/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#12272408%2FFunctions%2F-435046686">onDestroyView</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onDetach/#/PointingToDeclaration/"></a><a href="./#-188953192%2FFunctions%2F-435046686">onDetach</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onDetach/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/CallSuper.html">CallSuper</a>()  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-188953192%2FFunctions%2F-435046686">onDetach</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onGetLayoutInflater/#android.os.Bundle?/PointingToDeclaration/"></a><a href="./#-2088395758%2FFunctions%2F-435046686">onGetLayoutInflater</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onGetLayoutInflater/#android.os.Bundle?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br><a href="https://developer.android.com/reference/kotlin/android/view/LayoutInflater.html">LayoutInflater</a><a href="./#-2088395758%2FFunctions%2F-435046686">onGetLayoutInflater</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onHiddenChanged/#kotlin.Boolean/PointingToDeclaration/"></a><a href="./#-1097443830%2FFunctions%2F-435046686">onHiddenChanged</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onHiddenChanged/#kotlin.Boolean/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-1097443830%2FFunctions%2F-435046686">onHiddenChanged</a>(<a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onInflate/#android.app.Activity#android.util.AttributeSet#android.os.Bundle?/PointingToDeclaration/"></a><a href="./#535700016%2FFunctions%2F-435046686">onInflate</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onInflate/#android.app.Activity#android.util.AttributeSet#android.os.Bundle?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/UiThread.html">UiThread</a>()  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/CallSuper.html">CallSuper</a>()  <br>@<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html">Deprecated</a>(message = Deprecated in Java)  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#535700016%2FFunctions%2F-435046686">~~onInflate~~</a>~~(~~@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/app/Activity.html">Activity</a>~~p0~~~~,~~ @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/util/AttributeSet.html">AttributeSet</a>~~p1~~~~,~~ @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a>~~p2~~~~)~~  <br>  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/UiThread.html">UiThread</a>()  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/CallSuper.html">CallSuper</a>()  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#747100254%2FFunctions%2F-435046686">onInflate</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a>p0, @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/util/AttributeSet.html">AttributeSet</a>p1, @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a>p2)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onLowMemory/#/PointingToDeclaration/"></a><a href="./#637713178%2FFunctions%2F-435046686">onLowMemory</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onLowMemory/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/CallSuper.html">CallSuper</a>()  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#637713178%2FFunctions%2F-435046686">onLowMemory</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onMultiWindowModeChanged/#kotlin.Boolean/PointingToDeclaration/"></a><a href="./#-746428536%2FFunctions%2F-435046686">onMultiWindowModeChanged</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onMultiWindowModeChanged/#kotlin.Boolean/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-746428536%2FFunctions%2F-435046686">onMultiWindowModeChanged</a>(<a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onOptionsItemSelected/#android.view.MenuItem/PointingToDeclaration/"></a><a href="./#-733837981%2FFunctions%2F-435046686">onOptionsItemSelected</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onOptionsItemSelected/#android.view.MenuItem/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>  <br><a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#-733837981%2FFunctions%2F-435046686">onOptionsItemSelected</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/view/MenuItem.html">MenuItem</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onOptionsMenuClosed/#android.view.Menu/PointingToDeclaration/"></a><a href="./#-2132588525%2FFunctions%2F-435046686">onOptionsMenuClosed</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onOptionsMenuClosed/#android.view.Menu/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-2132588525%2FFunctions%2F-435046686">onOptionsMenuClosed</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/view/Menu.html">Menu</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onPause/#/PointingToDeclaration/"></a><a href="./#-528982343%2FFunctions%2F-435046686">onPause</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onPause/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/CallSuper.html">CallSuper</a>()  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-528982343%2FFunctions%2F-435046686">onPause</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onPictureInPictureModeChanged/#kotlin.Boolean/PointingToDeclaration/"></a><a href="./#1234600670%2FFunctions%2F-435046686">onPictureInPictureModeChanged</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onPictureInPictureModeChanged/#kotlin.Boolean/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#1234600670%2FFunctions%2F-435046686">onPictureInPictureModeChanged</a>(<a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onPrepareOptionsMenu/#android.view.Menu/PointingToDeclaration/"></a><a href="./#32420900%2FFunctions%2F-435046686">onPrepareOptionsMenu</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onPrepareOptionsMenu/#android.view.Menu/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#32420900%2FFunctions%2F-435046686">onPrepareOptionsMenu</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/view/Menu.html">Menu</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onPrimaryNavigationFragmentChanged/#kotlin.Boolean/PointingToDeclaration/"></a><a href="./#-1312883998%2FFunctions%2F-435046686">onPrimaryNavigationFragmentChanged</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onPrimaryNavigationFragmentChanged/#kotlin.Boolean/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-1312883998%2FFunctions%2F-435046686">onPrimaryNavigationFragmentChanged</a>(<a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onRequestPermissionsResult/#kotlin.Int#kotlin.Array[kotlin.String]#kotlin.IntArray/PointingToDeclaration/"></a><a href="./#976207768%2FFunctions%2F-435046686">onRequestPermissionsResult</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onRequestPermissionsResult/#kotlin.Int#kotlin.Array[kotlin.String]#kotlin.IntArray/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html">Deprecated</a>(message = Deprecated in Java)  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#976207768%2FFunctions%2F-435046686">~~onRequestPermissionsResult~~</a>~~(~~<a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a>~~p0~~~~,~~ @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a>&lt;<a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a>&gt;~~p1~~~~,~~ @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html">IntArray</a>~~p2~~~~)~~  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onResume/#/PointingToDeclaration/"></a><a href="./#-132440514%2FFunctions%2F-435046686">onResume</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onResume/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/CallSuper.html">CallSuper</a>()  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-132440514%2FFunctions%2F-435046686">onResume</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onSaveInstanceState/#android.os.Bundle/PointingToDeclaration/"></a><a href="./#-1457378075%2FFunctions%2F-435046686">onSaveInstanceState</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onSaveInstanceState/#android.os.Bundle/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-1457378075%2FFunctions%2F-435046686">onSaveInstanceState</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onStart/#/PointingToDeclaration/"></a><a href="./#92443085%2FFunctions%2F-435046686">onStart</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onStart/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/CallSuper.html">CallSuper</a>()  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#92443085%2FFunctions%2F-435046686">onStart</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onStop/#/PointingToDeclaration/"></a><a href="./#1575490441%2FFunctions%2F-435046686">onStop</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onStop/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/CallSuper.html">CallSuper</a>()  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#1575490441%2FFunctions%2F-435046686">onStop</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onViewStateRestored/#android.os.Bundle?/PointingToDeclaration/"></a><a href="./#-1634446181%2FFunctions%2F-435046686">onViewStateRestored</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/onViewStateRestored/#android.os.Bundle?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/CallSuper.html">CallSuper</a>()  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-1634446181%2FFunctions%2F-435046686">onViewStateRestored</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/performActivityCreated/#android.os.Bundle/PointingToDeclaration/"></a><a href="./#1268231107%2FFunctions%2F-435046686">performActivityCreated</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/performActivityCreated/#android.os.Bundle/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#1268231107%2FFunctions%2F-435046686">performActivityCreated</a>(<a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/performAttach/#/PointingToDeclaration/"></a><a href="./#-1182566998%2FFunctions%2F-435046686">performAttach</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/performAttach/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-1182566998%2FFunctions%2F-435046686">performAttach</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/performConfigurationChanged/#android.content.res.Configuration/PointingToDeclaration/"></a><a href="./#-533154595%2FFunctions%2F-435046686">performConfigurationChanged</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/performConfigurationChanged/#android.content.res.Configuration/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-533154595%2FFunctions%2F-435046686">performConfigurationChanged</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/content/res/Configuration.html">Configuration</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/performContextItemSelected/#android.view.MenuItem/PointingToDeclaration/"></a><a href="./#1818648248%2FFunctions%2F-435046686">performContextItemSelected</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/performContextItemSelected/#android.view.MenuItem/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#1818648248%2FFunctions%2F-435046686">performContextItemSelected</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/view/MenuItem.html">MenuItem</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/performCreate/#android.os.Bundle/PointingToDeclaration/"></a><a href="./#-574078014%2FFunctions%2F-435046686">performCreate</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/performCreate/#android.os.Bundle/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-574078014%2FFunctions%2F-435046686">performCreate</a>(<a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/performCreateOptionsMenu/#android.view.Menu#android.view.MenuInflater/PointingToDeclaration/"></a><a href="./#-1709202050%2FFunctions%2F-435046686">performCreateOptionsMenu</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/performCreateOptionsMenu/#android.view.Menu#android.view.MenuInflater/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#-1709202050%2FFunctions%2F-435046686">performCreateOptionsMenu</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/view/Menu.html">Menu</a>p0, @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/view/MenuInflater.html">MenuInflater</a>p1)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/performCreateView/#android.view.LayoutInflater#android.view.ViewGroup?#android.os.Bundle?/PointingToDeclaration/"></a><a href="./#1819336772%2FFunctions%2F-435046686">performCreateView</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/performCreateView/#android.view.LayoutInflater#android.view.ViewGroup?#android.os.Bundle?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#1819336772%2FFunctions%2F-435046686">performCreateView</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/view/LayoutInflater.html">LayoutInflater</a>p0, @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/android/view/ViewGroup.html">ViewGroup</a>p1, @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a>p2)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/performDestroy/#/PointingToDeclaration/"></a><a href="./#-66876751%2FFunctions%2F-435046686">performDestroy</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/performDestroy/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-66876751%2FFunctions%2F-435046686">performDestroy</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/performDestroyView/#/PointingToDeclaration/"></a><a href="./#-995952244%2FFunctions%2F-435046686">performDestroyView</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/performDestroyView/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-995952244%2FFunctions%2F-435046686">performDestroyView</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/performDetach/#/PointingToDeclaration/"></a><a href="./#-299909092%2FFunctions%2F-435046686">performDetach</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/performDetach/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-299909092%2FFunctions%2F-435046686">performDetach</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/performGetLayoutInflater/#android.os.Bundle?/PointingToDeclaration/"></a><a href="./#1890084878%2FFunctions%2F-435046686">performGetLayoutInflater</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/performGetLayoutInflater/#android.os.Bundle?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br><a href="https://developer.android.com/reference/kotlin/android/view/LayoutInflater.html">LayoutInflater</a><a href="./#1890084878%2FFunctions%2F-435046686">performGetLayoutInflater</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/performLowMemory/#/PointingToDeclaration/"></a><a href="./#-2019653098%2FFunctions%2F-435046686">performLowMemory</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/performLowMemory/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-2019653098%2FFunctions%2F-435046686">performLowMemory</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/performMultiWindowModeChanged/#kotlin.Boolean/PointingToDeclaration/"></a><a href="./#-1967580404%2FFunctions%2F-435046686">performMultiWindowModeChanged</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/performMultiWindowModeChanged/#kotlin.Boolean/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-1967580404%2FFunctions%2F-435046686">performMultiWindowModeChanged</a>(<a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/performOptionsItemSelected/#android.view.MenuItem/PointingToDeclaration/"></a><a href="./#-500443417%2FFunctions%2F-435046686">performOptionsItemSelected</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/performOptionsItemSelected/#android.view.MenuItem/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#-500443417%2FFunctions%2F-435046686">performOptionsItemSelected</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/view/MenuItem.html">MenuItem</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/performOptionsMenuClosed/#android.view.Menu/PointingToDeclaration/"></a><a href="./#1182338199%2FFunctions%2F-435046686">performOptionsMenuClosed</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/performOptionsMenuClosed/#android.view.Menu/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#1182338199%2FFunctions%2F-435046686">performOptionsMenuClosed</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/view/Menu.html">Menu</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/performPause/#/PointingToDeclaration/"></a><a href="./#-2056582219%2FFunctions%2F-435046686">performPause</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/performPause/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-2056582219%2FFunctions%2F-435046686">performPause</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/performPictureInPictureModeChanged/#kotlin.Boolean/PointingToDeclaration/"></a><a href="./#-120102438%2FFunctions%2F-435046686">performPictureInPictureModeChanged</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/performPictureInPictureModeChanged/#kotlin.Boolean/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-120102438%2FFunctions%2F-435046686">performPictureInPictureModeChanged</a>(<a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/performPrepareOptionsMenu/#android.view.Menu/PointingToDeclaration/"></a><a href="./#-284065760%2FFunctions%2F-435046686">performPrepareOptionsMenu</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/performPrepareOptionsMenu/#android.view.Menu/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#-284065760%2FFunctions%2F-435046686">performPrepareOptionsMenu</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/view/Menu.html">Menu</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/performPrimaryNavigationFragmentChanged/#/PointingToDeclaration/"></a><a href="./#-77590559%2FFunctions%2F-435046686">performPrimaryNavigationFragmentChanged</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/performPrimaryNavigationFragmentChanged/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-77590559%2FFunctions%2F-435046686">performPrimaryNavigationFragmentChanged</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/performResume/#/PointingToDeclaration/"></a><a href="./#-243396414%2FFunctions%2F-435046686">performResume</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/performResume/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-243396414%2FFunctions%2F-435046686">performResume</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/performSaveInstanceState/#android.os.Bundle/PointingToDeclaration/"></a><a href="./#1857548649%2FFunctions%2F-435046686">performSaveInstanceState</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/performSaveInstanceState/#android.os.Bundle/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#1857548649%2FFunctions%2F-435046686">performSaveInstanceState</a>(<a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/performStart/#/PointingToDeclaration/"></a><a href="./#-1435156791%2FFunctions%2F-435046686">performStart</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/performStart/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-1435156791%2FFunctions%2F-435046686">performStart</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/performStop/#/PointingToDeclaration/"></a><a href="./#833476365%2FFunctions%2F-435046686">performStop</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/performStop/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#833476365%2FFunctions%2F-435046686">performStop</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/performViewCreated/#/PointingToDeclaration/"></a><a href="./#-622028984%2FFunctions%2F-435046686">performViewCreated</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/performViewCreated/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-622028984%2FFunctions%2F-435046686">performViewCreated</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/postponeEnterTransition/#/PointingToDeclaration/"></a><a href="./#-1014691527%2FFunctions%2F-435046686">postponeEnterTransition</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/postponeEnterTransition/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-1014691527%2FFunctions%2F-435046686">postponeEnterTransition</a>()  <br>  <br>final <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#2089172219%2FFunctions%2F-435046686">postponeEnterTransition</a>(<a href="https://developer.android.com/reference/kotlin/java/lang/Long.html">Long</a>p0, @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit.html">TimeUnit</a>p1)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/registerForActivityResult/#androidx.activity.result.contract.ActivityResultContract[TypeParam(bounds=[kotlin.Any]),TypeParam(bounds=[kotlin.Any])]#androidx.activity.result.ActivityResultCallback[TypeParam(bounds=[kotlin.Any])]/PointingToDeclaration/"></a><a href="./#-510699193%2FFunctions%2F-435046686">registerForActivityResult</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/registerForActivityResult/#androidx.activity.result.contract.ActivityResultContract[TypeParam(bounds=[kotlin.Any]),TypeParam(bounds=[kotlin.Any])]#androidx.activity.result.ActivityResultCallback[TypeParam(bounds=[kotlin.Any])]/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br>final <a href="https://developer.android.com/reference/kotlin/androidx/activity/result/ActivityResultLauncher.html">ActivityResultLauncher</a>&lt;<a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.html#registerforactivityresult">I</a>&gt;<a href="./#-510699193%2FFunctions%2F-435046686">registerForActivityResult</a><I extends <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>, O extends <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/androidx/activity/result/contract/ActivityResultContract.html">ActivityResultContract</a>&lt;<a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.html#registerforactivityresult">I</a>, <a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.html#registerforactivityresult">O</a>&gt;p0, @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/androidx/activity/result/ActivityResultCallback.html">ActivityResultCallback</a>&lt;<a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.html#registerforactivityresult">O</a>&gt;p1)  <br>  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html">MainThread</a>()  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br>final <a href="https://developer.android.com/reference/kotlin/androidx/activity/result/ActivityResultLauncher.html">ActivityResultLauncher</a>&lt;<a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.html#registerforactivityresult">I</a>&gt;<a href="./#-943074134%2FFunctions%2F-435046686">registerForActivityResult</a><I extends <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>, O extends <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/androidx/activity/result/contract/ActivityResultContract.html">ActivityResultContract</a>&lt;<a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.html#registerforactivityresult">I</a>, <a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.html#registerforactivityresult">O</a>&gt;p0, @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/androidx/activity/result/ActivityResultRegistry.html">ActivityResultRegistry</a>p1, @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/androidx/activity/result/ActivityResultCallback.html">ActivityResultCallback</a>&lt;<a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.html#registerforactivityresult">O</a>&gt;p2)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/registerForContextMenu/#android.view.View/PointingToDeclaration/"></a><a href="./#30698097%2FFunctions%2F-435046686">registerForContextMenu</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/registerForContextMenu/#android.view.View/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#30698097%2FFunctions%2F-435046686">registerForContextMenu</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/requestPermissions/#kotlin.Array[kotlin.String]#kotlin.Int/PointingToDeclaration/"></a><a href="./#842108830%2FFunctions%2F-435046686">requestPermissions</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/requestPermissions/#kotlin.Array[kotlin.String]#kotlin.Int/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html">Deprecated</a>(message = Deprecated in Java)  <br>  <br>~~final~~ <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#842108830%2FFunctions%2F-435046686">~~requestPermissions~~</a>~~(~~@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a>&lt;<a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a>&gt;~~p0~~~~,~~ <a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a>~~p1~~~~)~~  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/requireActivity/#/PointingToDeclaration/"></a><a href="./#595583516%2FFunctions%2F-435046686">requireActivity</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/requireActivity/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br>final <a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/FragmentActivity.html">FragmentActivity</a><a href="./#595583516%2FFunctions%2F-435046686">requireActivity</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/requireArguments/#/PointingToDeclaration/"></a><a href="./#-1423665575%2FFunctions%2F-435046686">requireArguments</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/requireArguments/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br>final <a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a><a href="./#-1423665575%2FFunctions%2F-435046686">requireArguments</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/requireContext/#/PointingToDeclaration/"></a><a href="./#-138058592%2FFunctions%2F-435046686">requireContext</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/requireContext/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br>final <a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><a href="./#-138058592%2FFunctions%2F-435046686">requireContext</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/requireFragmentManager/#/PointingToDeclaration/"></a><a href="./#-1253443374%2FFunctions%2F-435046686">requireFragmentManager</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/requireFragmentManager/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>@<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html">Deprecated</a>(message = Deprecated in Java)  <br>  <br>~~final~~ <a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/FragmentManager.html">FragmentManager</a><a href="./#-1253443374%2FFunctions%2F-435046686">~~requireFragmentManager~~</a>~~(~~~~)~~  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/requireHost/#/PointingToDeclaration/"></a><a href="./#2018460835%2FFunctions%2F-435046686">requireHost</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/requireHost/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br>final <a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a><a href="./#2018460835%2FFunctions%2F-435046686">requireHost</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/requireParentFragment/#/PointingToDeclaration/"></a><a href="./#190840817%2FFunctions%2F-435046686">requireParentFragment</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/requireParentFragment/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br>final <a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.html">Fragment</a><a href="./#190840817%2FFunctions%2F-435046686">requireParentFragment</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/requireView/#/PointingToDeclaration/"></a><a href="./#-119232954%2FFunctions%2F-435046686">requireView</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/requireView/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br>final <a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><a href="./#-119232954%2FFunctions%2F-435046686">requireView</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/restoreChildFragmentState/#android.os.Bundle?/PointingToDeclaration/"></a><a href="./#871563595%2FFunctions%2F-435046686">restoreChildFragmentState</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/restoreChildFragmentState/#android.os.Bundle?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#871563595%2FFunctions%2F-435046686">restoreChildFragmentState</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/restoreViewState/#android.os.Bundle/PointingToDeclaration/"></a><a href="./#1933821257%2FFunctions%2F-435046686">restoreViewState</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/restoreViewState/#android.os.Bundle/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>final <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#1933821257%2FFunctions%2F-435046686">restoreViewState</a>(<a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setAllowEnterTransitionOverlap/#kotlin.Boolean/PointingToDeclaration/"></a><a href="./#-206973842%2FFunctions%2F-435046686">setAllowEnterTransitionOverlap</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setAllowEnterTransitionOverlap/#kotlin.Boolean/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-206973842%2FFunctions%2F-435046686">setAllowEnterTransitionOverlap</a>(<a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setAllowReturnTransitionOverlap/#kotlin.Boolean/PointingToDeclaration/"></a><a href="./#-1153975750%2FFunctions%2F-435046686">setAllowReturnTransitionOverlap</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setAllowReturnTransitionOverlap/#kotlin.Boolean/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-1153975750%2FFunctions%2F-435046686">setAllowReturnTransitionOverlap</a>(<a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setAnimatingAway/#android.view.View/PointingToDeclaration/"></a><a href="./#-303248461%2FFunctions%2F-435046686">setAnimatingAway</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setAnimatingAway/#android.view.View/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-303248461%2FFunctions%2F-435046686">setAnimatingAway</a>(<a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setAnimator/#android.animation.Animator/PointingToDeclaration/"></a><a href="./#2047466967%2FFunctions%2F-435046686">setAnimator</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setAnimator/#android.animation.Animator/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#2047466967%2FFunctions%2F-435046686">setAnimator</a>(<a href="https://developer.android.com/reference/kotlin/android/animation/Animator.html">Animator</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setArguments/#android.os.Bundle?/PointingToDeclaration/"></a><a href="./#1295704676%2FFunctions%2F-435046686">setArguments</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setArguments/#android.os.Bundle?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#1295704676%2FFunctions%2F-435046686">setArguments</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setEnterSharedElementCallback/#androidx.core.app.SharedElementCallback?/PointingToDeclaration/"></a><a href="./#595593328%2FFunctions%2F-435046686">setEnterSharedElementCallback</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setEnterSharedElementCallback/#androidx.core.app.SharedElementCallback?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#595593328%2FFunctions%2F-435046686">setEnterSharedElementCallback</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/androidx/core/app/SharedElementCallback.html">SharedElementCallback</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setEnterTransition/#kotlin.Any?/PointingToDeclaration/"></a><a href="./#-1945456029%2FFunctions%2F-435046686">setEnterTransition</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setEnterTransition/#kotlin.Any?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-1945456029%2FFunctions%2F-435046686">setEnterTransition</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setExitSharedElementCallback/#androidx.core.app.SharedElementCallback?/PointingToDeclaration/"></a><a href="./#-2038241996%2FFunctions%2F-435046686">setExitSharedElementCallback</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setExitSharedElementCallback/#androidx.core.app.SharedElementCallback?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-2038241996%2FFunctions%2F-435046686">setExitSharedElementCallback</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/androidx/core/app/SharedElementCallback.html">SharedElementCallback</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setExitTransition/#kotlin.Any?/PointingToDeclaration/"></a><a href="./#1092395815%2FFunctions%2F-435046686">setExitTransition</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setExitTransition/#kotlin.Any?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#1092395815%2FFunctions%2F-435046686">setExitTransition</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setFocusedView/#android.view.View/PointingToDeclaration/"></a><a href="./#-1997307069%2FFunctions%2F-435046686">setFocusedView</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setFocusedView/#android.view.View/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-1997307069%2FFunctions%2F-435046686">setFocusedView</a>(<a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setHasOptionsMenu/#kotlin.Boolean/PointingToDeclaration/"></a><a href="./#807682800%2FFunctions%2F-435046686">setHasOptionsMenu</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setHasOptionsMenu/#kotlin.Boolean/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#807682800%2FFunctions%2F-435046686">setHasOptionsMenu</a>(<a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setHideReplaced/#kotlin.Boolean/PointingToDeclaration/"></a><a href="./#1348192993%2FFunctions%2F-435046686">setHideReplaced</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setHideReplaced/#kotlin.Boolean/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#1348192993%2FFunctions%2F-435046686">setHideReplaced</a>(<a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setInitialSavedState/#androidx.fragment.app.Fragment.SavedState?/PointingToDeclaration/"></a><a href="./#-471028479%2FFunctions%2F-435046686">setInitialSavedState</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setInitialSavedState/#androidx.fragment.app.Fragment.SavedState?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-471028479%2FFunctions%2F-435046686">setInitialSavedState</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.SavedState.html">Fragment.SavedState</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setMenuVisibility/#kotlin.Boolean/PointingToDeclaration/"></a><a href="./#-1319005310%2FFunctions%2F-435046686">setMenuVisibility</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setMenuVisibility/#kotlin.Boolean/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-1319005310%2FFunctions%2F-435046686">setMenuVisibility</a>(<a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setNextAnim/#kotlin.Int/PointingToDeclaration/"></a><a href="./#2036209256%2FFunctions%2F-435046686">setNextAnim</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setNextAnim/#kotlin.Int/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#2036209256%2FFunctions%2F-435046686">setNextAnim</a>(<a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setNextTransition/#kotlin.Int/PointingToDeclaration/"></a><a href="./#-534819292%2FFunctions%2F-435046686">setNextTransition</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setNextTransition/#kotlin.Int/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-534819292%2FFunctions%2F-435046686">setNextTransition</a>(<a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setOnStartEnterTransitionListener/#androidx.fragment.app.Fragment.OnStartEnterTransitionListener/PointingToDeclaration/"></a><a href="./#-322547332%2FFunctions%2F-435046686">setOnStartEnterTransitionListener</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setOnStartEnterTransitionListener/#androidx.fragment.app.Fragment.OnStartEnterTransitionListener/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-322547332%2FFunctions%2F-435046686">setOnStartEnterTransitionListener</a>(<a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.OnStartEnterTransitionListener.html">Fragment.OnStartEnterTransitionListener</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setPostOnViewCreatedAlpha/#kotlin.Float/PointingToDeclaration/"></a><a href="./#2015435813%2FFunctions%2F-435046686">setPostOnViewCreatedAlpha</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setPostOnViewCreatedAlpha/#kotlin.Float/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#2015435813%2FFunctions%2F-435046686">setPostOnViewCreatedAlpha</a>(<a href="https://developer.android.com/reference/kotlin/java/lang/Float.html">Float</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setReenterTransition/#kotlin.Any?/PointingToDeclaration/"></a><a href="./#575130896%2FFunctions%2F-435046686">setReenterTransition</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setReenterTransition/#kotlin.Any?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#575130896%2FFunctions%2F-435046686">setReenterTransition</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setRetainInstance/#kotlin.Boolean/PointingToDeclaration/"></a><a href="./#1678107769%2FFunctions%2F-435046686">setRetainInstance</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setRetainInstance/#kotlin.Boolean/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html">Deprecated</a>(message = Deprecated in Java)  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#1678107769%2FFunctions%2F-435046686">~~setRetainInstance~~</a>~~(~~<a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a>~~p0~~~~)~~  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setReturnTransition/#kotlin.Any?/PointingToDeclaration/"></a><a href="./#-1908295687%2FFunctions%2F-435046686">setReturnTransition</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setReturnTransition/#kotlin.Any?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-1908295687%2FFunctions%2F-435046686">setReturnTransition</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setSharedElementEnterTransition/#kotlin.Any?/PointingToDeclaration/"></a><a href="./#-995246902%2FFunctions%2F-435046686">setSharedElementEnterTransition</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setSharedElementEnterTransition/#kotlin.Any?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-995246902%2FFunctions%2F-435046686">setSharedElementEnterTransition</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setSharedElementNames/#java.util.ArrayList[kotlin.String]?#java.util.ArrayList[kotlin.String]?/PointingToDeclaration/"></a><a href="./#1983822000%2FFunctions%2F-435046686">setSharedElementNames</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setSharedElementNames/#java.util.ArrayList[kotlin.String]?#java.util.ArrayList[kotlin.String]?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#1983822000%2FFunctions%2F-435046686">setSharedElementNames</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/java/util/ArrayList.html">ArrayList</a>&lt;<a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a>&gt;p0, @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/java/util/ArrayList.html">ArrayList</a>&lt;<a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a>&gt;p1)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setSharedElementReturnTransition/#kotlin.Any?/PointingToDeclaration/"></a><a href="./#1778383474%2FFunctions%2F-435046686">setSharedElementReturnTransition</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setSharedElementReturnTransition/#kotlin.Any?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#1778383474%2FFunctions%2F-435046686">setSharedElementReturnTransition</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setTargetFragment/#androidx.fragment.app.Fragment?#kotlin.Int/PointingToDeclaration/"></a><a href="./#81316849%2FFunctions%2F-435046686">setTargetFragment</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setTargetFragment/#androidx.fragment.app.Fragment?#kotlin.Int/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html">Deprecated</a>(message = Deprecated in Java)  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#81316849%2FFunctions%2F-435046686">~~setTargetFragment~~</a>~~(~~@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.html">Fragment</a>~~p0~~~~,~~ <a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a>~~p1~~~~)~~  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setUserVisibleHint/#kotlin.Boolean/PointingToDeclaration/"></a><a href="./#508416803%2FFunctions%2F-435046686">setUserVisibleHint</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/setUserVisibleHint/#kotlin.Boolean/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html">Deprecated</a>(message = Deprecated in Java)  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#508416803%2FFunctions%2F-435046686">~~setUserVisibleHint~~</a>~~(~~<a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a>~~p0~~~~)~~  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/shouldShowRequestPermissionRationale/#kotlin.String/PointingToDeclaration/"></a><a href="./#1351811235%2FFunctions%2F-435046686">shouldShowRequestPermissionRationale</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/shouldShowRequestPermissionRationale/#kotlin.String/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a><a href="./#1351811235%2FFunctions%2F-435046686">shouldShowRequestPermissionRationale</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a>p0)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/startActivity/#android.content.Intent/PointingToDeclaration/"></a><a href="./#1407473615%2FFunctions%2F-435046686">startActivity</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/startActivity/#android.content.Intent/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#1407473615%2FFunctions%2F-435046686">startActivity</a>(<a href="https://developer.android.com/reference/kotlin/android/content/Intent.html">Intent</a>p0)  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#150724574%2FFunctions%2F-435046686">startActivity</a>(<a href="https://developer.android.com/reference/kotlin/android/content/Intent.html">Intent</a>p0, @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a>p1)  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/startActivityForResult/#android.content.Intent#kotlin.Int/PointingToDeclaration/"></a><a href="./#-720783976%2FFunctions%2F-435046686">startActivityForResult</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/startActivityForResult/#android.content.Intent#kotlin.Int/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html">Deprecated</a>(message = Deprecated in Java)  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-720783976%2FFunctions%2F-435046686">~~startActivityForResult~~</a>~~(~~<a href="https://developer.android.com/reference/kotlin/android/content/Intent.html">Intent</a>~~p0~~~~,~~ <a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a>~~p1~~~~)~~  <br>  <br>@<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html">Deprecated</a>(message = Deprecated in Java)  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-1935101067%2FFunctions%2F-435046686">~~startActivityForResult~~</a>~~(~~<a href="https://developer.android.com/reference/kotlin/android/content/Intent.html">Intent</a>~~p0~~~~,~~ <a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a>~~p1~~~~,~~ @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a>~~p2~~~~)~~  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/startIntentSenderForResult/#android.content.IntentSender#kotlin.Int#android.content.Intent?#kotlin.Int#kotlin.Int#kotlin.Int#android.os.Bundle?/PointingToDeclaration/"></a><a href="./#1565569391%2FFunctions%2F-435046686">startIntentSenderForResult</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/startIntentSenderForResult/#android.content.IntentSender#kotlin.Int#android.content.Intent?#kotlin.Int#kotlin.Int#kotlin.Int#android.os.Bundle?/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html">Deprecated</a>(message = Deprecated in Java)  <br>  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#1565569391%2FFunctions%2F-435046686">~~startIntentSenderForResult~~</a>~~(~~<a href="https://developer.android.com/reference/kotlin/android/content/IntentSender.html">IntentSender</a>~~p0~~~~,~~ <a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a>~~p1~~~~,~~ @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/android/content/Intent.html">Intent</a>~~p2~~~~,~~ <a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a>~~p3~~~~,~~ <a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a>~~p4~~~~,~~ <a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a>~~p5~~~~,~~ @<a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html">Nullable</a>()<a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a>~~p6~~~~)~~  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/startPostponedEnterTransition/#/PointingToDeclaration/"></a><a href="./#-1562200913%2FFunctions%2F-435046686">startPostponedEnterTransition</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/startPostponedEnterTransition/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#-1562200913%2FFunctions%2F-435046686">startPostponedEnterTransition</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/toString/#/PointingToDeclaration/"></a><a href="./#-563062082%2FFunctions%2F-435046686">toString</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/toString/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()  <br>  <br><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><a href="./#-563062082%2FFunctions%2F-435046686">toString</a>()  <br>  <br><br><br></td>
+</tr>
+<tr>
+<td><a name="androidx.fragment.app/RemoteContentFragment/unregisterForContextMenu/#android.view.View/PointingToDeclaration/"></a><a href="./#249192522%2FFunctions%2F-435046686">unregisterForContextMenu</a></td>
+<td><a name="androidx.fragment.app/RemoteContentFragment/unregisterForContextMenu/#android.view.View/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><a href="./#249192522%2FFunctions%2F-435046686">unregisterForContextMenu</a>(@<a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html">NonNull</a>()<a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a>p0)  <br>  <br><br><br></td>
+</tr>
+</tbody>
+</table>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright (c) 2020 Blue Jeans Network, Inc. All rights reserved.
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../../../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../../../../assets/javascripts/workers/search.b0710199.min.js", "version": null}</script>
+    
+    
+      <script src="../../../../../../assets/javascripts/bundle.76f349be.min.js"></script>
+      
+        <script src="../../../../../../expand_navigation.js"></script>
+      
+    
+  </body>
+</html>

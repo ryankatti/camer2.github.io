@@ -8,7 +8,7 @@ site_url: https://github.com/ryankatti/camer2.github.io
 
 # Repository (add link to repository on each page)
 repo_name: camera2.github.io
-repo_url:  https://github.com/ryankatti/camer2.github.io
+repo_url: https://github.com/ryankatti/camer2.github.io
 edit_uri: edit/main/docs/src/doc/docs/
 
 
@@ -22,25 +22,18 @@ theme:
   social:
     - type: 'github'
       link: 'https://github.com/Kotlin/dokka'
-      
-# Extensions
-markdown_extensions:
-  - admonition
-  - codehilite:
-      guess_lang: false
-       - footnotes
-  - meta
-  - def_list
-  - toc:
-      permalink: true
-  - pymdownx.betterem:
-      smart_enable: all
-  - pymdownx.caret
-  - pymdownx.inlinehilite
-  - pymdownx.magiclink
-  - pymdownx.smartsymbols
-  - pymdownx.superfences
-  
+
+
 nav:
-  - Home: android-sdk/index.md
+  - Home: index.md
   - User guide:
+      - Integration: docs/Setup.md
+      - Introduction: docs/index.md
+      - Integration: docs/Integration.md
+      - Sample App : docs/cli/Sampleapp.md
+
+extra_javascript:
+  - expand_navigation.js
+
+extra_css:
+  - dokka_colors.css
