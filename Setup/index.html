@@ -339,10 +339,10 @@
                 
                   <h1>Setup</h1>
                 
-                <h4 id="install-bluejeans-android-sdk">Install BlueJeans Android SDK:</h4>
+                <h4 id="install-bluejeans-android-sdk">Install BlueJeans Android SDK:<a class="headerlink" href="#install-bluejeans-android-sdk" title="Permanent link">&para;</a></h4>
 <p>We distribute our SDK from the Maven Repository.</p>
-<p>To add the SDK to your app, add the following dependency in your build.gradle files:</p>
-<pre><code class="language-xml">repositories {
+<p>To add the SDK to your app, add the following dependency in your build.gradle files:
+<div class="highlight"><pre><span></span><code>repositories {
         maven {
             url publishURL
             credentials(AwsCredentials) {
@@ -351,12 +351,12 @@
             }
         }
     }
-</code></pre>
-<pre><code class="language-xml">implementation(&quot;com.bluejeans:sdk-android:1.0.0-alpha.1'&quot;) {
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>implementation(&quot;com.bluejeans:sdk-android:1.0.0-alpha.1&#39;&quot;) {
         transitive(true)
     }
-</code></pre>
-<p>URL and keys will be shared separately.</p>
+</code></pre></div>
+URL and keys will be shared separately.</p>
                 
               
               

@@ -407,49 +407,49 @@
                 
                   <h1>Integration</h1>
                 
-                <h3 id="initialize-bluejeans-sdk">Initialize BlueJeans SDK:</h3>
+                <h3 id="initialize-bluejeans-sdk">Initialize BlueJeans SDK:<a class="headerlink" href="#initialize-bluejeans-sdk" title="Permanent link">&para;</a></h3>
 <p>Create the object of BlueJeans SDK in application onCreate with help of application context and use it to access all the APIs</p>
 <p>The minimum permission needed to join a meeting is permission for RECORD_AUDIO. Make sure the app requests this permission before calling Join API.</p>
-<p>Sample Code:</p>
-<pre><code class="language-java">blueJeansSDK = new BlueJeansSDK(new BlueJeansSDKInitParams(this));
-</code></pre>
-<p>APIs are exposed through two major services, MeetingService and PermissionService. These objects can be accessed in code as</p>
-<pre><code class="language-java">blueJeansSDK.getMeetingService 
-</code></pre>
-<p>This takes care of all meeting related APIs (refer to the documentation for API set and details)</p>
-<pre><code class="language-java">blueJeansSDK.getPermissionService
-</code></pre>
+<p>Sample Code:
+<div class="highlight"><pre><span></span><code><span class="n">blueJeansSDK</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BlueJeansSDK</span><span class="p">(</span><span class="k">new</span> <span class="n">BlueJeansSDKInitParams</span><span class="p">(</span><span class="k">this</span><span class="p">));</span>
+</code></pre></div>
+APIs are exposed through two major services, MeetingService and PermissionService. These objects can be accessed in code as</p>
+<p><div class="highlight"><pre><span></span><code><span class="n">blueJeansSDK</span><span class="p">.</span><span class="na">getMeetingService</span> 
+</code></pre></div>
+This takes care of all meeting related APIs (refer to the documentation for API set and details)</p>
+<div class="highlight"><pre><span></span><code><span class="n">blueJeansSDK</span><span class="p">.</span><span class="na">getPermissionService</span>
+</code></pre></div>
 <p>This takes care of permission handling related APIs (refer to the documentation for API set and details)</p>
-<h4 id="join-a-bluejeans-meeting">Join a BlueJeans meeting:</h4>
+<h4 id="join-a-bluejeans-meeting">Join a BlueJeans meeting:<a class="headerlink" href="#join-a-bluejeans-meeting" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Provide Mic(RecordAudio) and Camera Permissions either by using BJN SDK permission service or by Android SDK APIs</li>
 <li>Get and add SelfVideoFragment and enableSelfVideoPreview to start the self video</li>
 <li>Get and use meeting service and invoke join APIs to join a meeting</li>
 <li>Observe for Join API result by subscribing to the Rx Single returned by the join API</li>
 </ul>
-<h4 id="subscriptions-observablevalue-and-rx-singles">Subscriptions (ObservableValue and Rx Single's):</h4>
+<h4 id="subscriptions-observablevalue-and-rx-singles">Subscriptions (ObservableValue and Rx Single's):<a class="headerlink" href="#subscriptions-observablevalue-and-rx-singles" title="Permanent link">&para;</a></h4>
 <p><strong>Single's:</strong></p>
-<p>http://reactivex.io/RxJava/javadoc/io/reactivex/Single.html</p>
+<p><a href="http://reactivex.io/RxJava/javadoc/io/reactivex/Single.html">http://reactivex.io/RxJava/javadoc/io/reactivex/Single.html</a></p>
 <p><strong>ObservableValues:</strong></p>
 <p>Most of our subscriptions are stateful members called ObservableValues.</p>
 <p>These are our BJN custom reactive stream elements carrying a value that can be accessed (READ only) at any point in time and also allows a subscription.</p>
-<p>Through ObservableValue you can also access rxObservable(http://reactivex.io/RxJava/javadoc/io/reactivex/Observable.html) and subscribe.</p>
+<p>Through ObservableValue you can also access rxObservable(<a href="http://reactivex.io/RxJava/javadoc/io/reactivex/Observable.html">http://reactivex.io/RxJava/javadoc/io/reactivex/Observable.html</a>) and subscribe.</p>
 <p>Sample app depicts the usage of both the RxSingle and ObeservableValue</p>
-<h4 id="managing-self-video">Managing Self Video:</h4>
-<h5 id="orientation-handling">Orientation handling:</h5>
+<h4 id="managing-self-video">Managing Self Video:<a class="headerlink" href="#managing-self-video" title="Permanent link">&para;</a></h4>
+<h5 id="orientation-handling">Orientation handling:<a class="headerlink" href="#orientation-handling" title="Permanent link">&para;</a></h5>
 <p>If Meeting activity handles
 <strong>onConfigurationChanged:</strong> Call <em>setSelfVideoOrientation</em></p>
 <p>If Meeting activity recreates on orientation change:
 No need to call any additional API.</p>
-<h5 id="mute">Mute:</h5>
+<h5 id="mute">Mute:<a class="headerlink" href="#mute" title="Permanent link">&para;</a></h5>
 <p><em>enableSelfVideoPreview</em> provides for enabling/disabling the camera capturer. Functional irrespective of meeting state.</p>
 <p><em>setVideoMuted</em> will mute the video stream flowing to the other endpoint. Functional when in a meeting.</p>
 <p>The integrated app should use these APIs in combination to drive the self video mute.</p>
-<h5 id="video-device-enumeration-selection">Video device enumeration, selection:</h5>
+<h5 id="video-device-enumeration-selection">Video device enumeration, selection:<a class="headerlink" href="#video-device-enumeration-selection" title="Permanent link">&para;</a></h5>
 <p><em>videoDevices</em> will provide a list of video/camera devices available on the hardware.</p>
 <p><em>currentVideoDevice</em> will provide for the current device selected. By default, the front camera is selected.</p>
 <p>Use <em>selectVideoDevice</em> and choose the video device of your choice from the available <em>videoDevices</em> list.</p>
-<h5 id="audio-device-enumeration-selection">Audio device enumeration, selection:</h5>
+<h5 id="audio-device-enumeration-selection">Audio device enumeration, selection:<a class="headerlink" href="#audio-device-enumeration-selection" title="Permanent link">&para;</a></h5>
 <p><em>audioDevices</em> will provide a list of audio devices available on the hardware.</p>
 <p><em>currentAudioDevice</em> will provide for the current audio device selected.</p>
 <p>On dynamic change in audio devices, SDK's default order of auto selection is as below:</p>
@@ -462,7 +462,7 @@ No need to call any additional API.</p>
 <li>Speaker</li>
 </ul>
 <p>Use <em>selectAudioDevice</em> and choose the audio device of your choice from the available <em>audioDevices</em> list.</p>
-<h5 id="video-layouts">Video Layouts:</h5>
+<h5 id="video-layouts">Video Layouts:<a class="headerlink" href="#video-layouts" title="Permanent link">&para;</a></h5>
 <p>Represents how remote participant’s videos are composed
 - <strong>Speaker</strong>: Only the most recent speaker is shown, taking up the whole video stream.
 - <strong>People</strong>: The most recent speaker is shown as a larger video. A filmstrip of the next (up to) 5 most recent speakers is shown at the top.
